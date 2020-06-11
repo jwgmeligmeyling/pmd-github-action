@@ -25,11 +25,22 @@
   "author": "YourNameOrOrganization",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.0"
+    "@actions/core": "^1.2.4",
+    "@actions/exec": "^1.0.4",
+    "@actions/github": "^3.0.0",
+    "@actions/glob": "^0.1.0",
+    "@actions/io": "^1.0.2",
+    "@octokit/rest": "latest",
+    "@types/html-to-text": "^5.1.1",
+    "fast-xml-parser": "^3.17.4",
+    "html-to-text": "latest",
+    "ramda": "^0.27.0",
+    "unescape": "latest"
   },
   "devDependencies": {
     "@types/jest": "^24.0.23",
     "@types/node": "^12.7.12",
+    "@types/ramda": "^0.27.6",
     "@typescript-eslint/parser": "^2.8.0",
     "@zeit/ncc": "^0.20.5",
     "eslint": "^5.16.0",

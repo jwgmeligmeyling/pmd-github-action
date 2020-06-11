@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BugCollection sequence='0' release='' analysisTimestamp='1591914418522' version='4.0.0' timestamp='1591914415000'>
+    <Project projectName='capsule-crm'>
+        <Jar>/home/runner/work/athena-hibernate-test/athena-hibernate-test/external/capsule-crm/target/classes</Jar>
+        <Jar>/home/runner/work/athena-hibernate-test/athena-hibernate-test/external/capsule-crm/target/test-classes
+        </Jar>
+        <AuxClasspathEntry>
+            /home/runner/work/athena-hibernate-test/athena-hibernate-test/external/capsule-crm/target/test-classes
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>/home/runner/.m2/repository/org/projectlombok/lombok/1.18.6/lombok-1.18.6.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>
+            /home/runner/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>
+            /home/runner/.m2/repository/org/jboss/spec/javax/ws/rs/jboss-jaxrs-api_2.1_spec/1.0.1.Final/jboss-jaxrs-api_2.1_spec-1.0.1.Final.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>
+            /home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.5/jackson-annotations-2.9.5.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>
+            /home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.5/jackson-databind-2.9.5.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>
+            /home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.5/jackson-core-2.9.5.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>/home/runner/.m2/repository/junit/junit/4.12/junit-4.12.jar</AuxClasspathEntry>
+        <AuxClasspathEntry>/home/runner/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>/home/runner/.m2/repository/org/reflections/reflections/0.9.12/reflections-0.9.12.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>/home/runner/.m2/repository/org/javassist/javassist/3.23.1-GA/javassist-3.23.1-GA.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>
+            /home/runner/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.5/jackson-datatype-jsr310-2.9.5.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>
+            /home/runner/.m2/repository/org/jboss/resteasy/resteasy-client/3.6.1.Final/resteasy-client-3.6.1.Final.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>
+            /home/runner/.m2/repository/org/jboss/resteasy/resteasy-jaxrs/3.6.1.Final/resteasy-jaxrs-3.6.1.Final.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>
+            /home/runner/.m2/repository/org/jboss/spec/javax/xml/bind/jboss-jaxb-api_2.3_spec/1.0.1.Final/jboss-jaxb-api_2.3_spec-1.0.1.Final.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>
+            /home/runner/.m2/repository/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>
+            /home/runner/.m2/repository/org/jboss/spec/javax/annotation/jboss-annotations-api_1.2_spec/1.0.0.Final/jboss-annotations-api_1.2_spec-1.0.0.Final.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>/home/runner/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>/home/runner/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar</AuxClasspathEntry>
+        <AuxClasspathEntry>/home/runner/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>
+            /home/runner/.m2/repository/javax/json/bind/javax.json.bind-api/1.0/javax.json.bind-api-1.0.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>
+            /home/runner/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>/home/runner/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>/home/runner/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>/home/runner/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>
+            /home/runner/.m2/repository/org/jboss/resteasy/resteasy-jackson2-provider/3.6.1.Final/resteasy-jackson2-provider-3.6.1.Final.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>
+            /home/runner/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.9.5/jackson-jaxrs-json-provider-2.9.5.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>
+            /home/runner/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.9.5/jackson-jaxrs-base-2.9.5.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>
+            /home/runner/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.9.5/jackson-module-jaxb-annotations-2.9.5.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>/home/runner/.m2/repository/com/github/fge/json-patch/1.3/json-patch-1.3.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>/home/runner/.m2/repository/com/github/fge/jackson-coreutils/1.0/jackson-coreutils-1.0.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>/home/runner/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar
+        </AuxClasspathEntry>
+        <AuxClasspathEntry>/home/runner/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar
+        </AuxClasspathEntry>
+        <Plugin id='com.h3xstream.findsecbugs' enabled='true'></Plugin>
+        <SrcDir>/home/runner/work/athena-hibernate-test/athena-hibernate-test/external/capsule-crm/src/main/java
+        </SrcDir>
+        <SrcDir>/home/runner/work/athena-hibernate-test/athena-hibernate-test/external/capsule-crm/src/test/java
+        </SrcDir>
+        <WrkDir>/home/runner/work/athena-hibernate-test/athena-hibernate-test/external/capsule-crm/target</WrkDir>
+    </Project>
+    <BugInstance instanceOccurrenceNum='0' instanceHash='a7b4b878d88d4324f0592c7c731f1762' rank='15' abbrev='ST'
+                 category='STYLE' priority='1' type='ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD' instanceOccurrenceMax='0'>
+        <ShortMessage>Write to static field from instance method</ShortMessage>
+        <LongMessage>Write to static field com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.tag1 from
+            instance method com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step01_CreateTags()
+        </LongMessage>
+        <Class classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' start='37' end='266'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>At CapsuleTargetTest.java:[lines 37-266]</Message>
+            </SourceLine>
+            <Message>In class com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest</Message>
+        </Class>
+        <Method isStatic='false' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' signature='()V'
+                name='step01_CreateTags' primary='true'>
+            <SourceLine endBytecode='226' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        start='66' end='78'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java' startBytecode='0'></SourceLine>
+            <Message>In method com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step01_CreateTags()</Message>
+        </Method>
+        <Field isStatic='true' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+               signature='Lcom/pallasathenagroup/capsule/models/Tag;' name='tag1' primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>In CapsuleTargetTest.java</Message>
+            </SourceLine>
+            <Message>Field com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.tag1</Message>
+        </Field>
+        <SourceLine endBytecode='6' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' start='66'
+                    end='66' sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                    sourcefile='CapsuleTargetTest.java' startBytecode='6' primary='true'>
+            <Message>At CapsuleTargetTest.java:[line 66]</Message>
+        </SourceLine>
+    </BugInstance>
+    <BugInstance instanceOccurrenceNum='0' instanceHash='aa95a2c0f4c38fc08b087f9dcb352375' rank='15' abbrev='ST'
+                 category='STYLE' priority='1' type='ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD' instanceOccurrenceMax='0'>
+        <ShortMessage>Write to static field from instance method</ShortMessage>
+        <LongMessage>Write to static field com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.tag2 from
+            instance method com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step01_CreateTags()
+        </LongMessage>
+        <Class classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' start='37' end='266'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>At CapsuleTargetTest.java:[lines 37-266]</Message>
+            </SourceLine>
+            <Message>In class com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest</Message>
+        </Class>
+        <Method isStatic='false' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' signature='()V'
+                name='step01_CreateTags' primary='true'>
+            <SourceLine endBytecode='226' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        start='66' end='78'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java' startBytecode='0'></SourceLine>
+            <Message>In method com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step01_CreateTags()</Message>
+        </Method>
+        <Field isStatic='true' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+               signature='Lcom/pallasathenagroup/capsule/models/Tag;' name='tag2' primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>In CapsuleTargetTest.java</Message>
+            </SourceLine>
+            <Message>Field com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.tag2</Message>
+        </Field>
+        <SourceLine endBytecode='15' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' start='67'
+                    end='67' sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                    sourcefile='CapsuleTargetTest.java' startBytecode='15' primary='true'>
+            <Message>At CapsuleTargetTest.java:[line 67]</Message>
+        </SourceLine>
+    </BugInstance>
+    <BugInstance instanceOccurrenceNum='0' instanceHash='7571214c50c30eacd953a1f7ed52f58f' rank='15' abbrev='ST'
+                 category='STYLE' priority='1' type='ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD' instanceOccurrenceMax='0'>
+        <ShortMessage>Write to static field from instance method</ShortMessage>
+        <LongMessage>Write to static field com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.fieldDefinition
+            from instance method
+            com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step03_CreateFieldDefinitions()
+        </LongMessage>
+        <Class classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' start='37' end='266'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>At CapsuleTargetTest.java:[lines 37-266]</Message>
+            </SourceLine>
+            <Message>In class com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest</Message>
+        </Class>
+        <Method isStatic='false' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' signature='()V'
+                name='step03_CreateFieldDefinitions' primary='true'>
+            <SourceLine endBytecode='112' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        start='96' end='102'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java' startBytecode='0'></SourceLine>
+            <Message>In method
+                com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step03_CreateFieldDefinitions()
+            </Message>
+        </Method>
+        <Field isStatic='true' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+               signature='Lcom/pallasathenagroup/capsule/models/FieldDefinition;' name='fieldDefinition' primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>In CapsuleTargetTest.java</Message>
+            </SourceLine>
+            <Message>Field com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.fieldDefinition</Message>
+        </Field>
+        <SourceLine endBytecode='6' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' start='96'
+                    end='96' sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                    sourcefile='CapsuleTargetTest.java' startBytecode='6' primary='true'>
+            <Message>At CapsuleTargetTest.java:[line 96]</Message>
+        </SourceLine>
+    </BugInstance>
+    <BugInstance instanceOccurrenceNum='0' instanceHash='6f1e9b133ce242c4fc28e0ec5cc1a472' rank='17' abbrev='ST'
+                 category='STYLE' priority='2' type='ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD' instanceOccurrenceMax='0'>
+        <ShortMessage>Write to static field from instance method</ShortMessage>
+        <LongMessage>Write to static field com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.actualTag1 from
+            instance method com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step01_CreateTags()
+        </LongMessage>
+        <Class classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' start='37' end='266'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>At CapsuleTargetTest.java:[lines 37-266]</Message>
+            </SourceLine>
+            <Message>In class com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest</Message>
+        </Class>
+        <Method isStatic='false' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' signature='()V'
+                name='step01_CreateTags' primary='true'>
+            <SourceLine endBytecode='226' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        start='66' end='78'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java' startBytecode='0'></SourceLine>
+            <Message>In method com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step01_CreateTags()</Message>
+        </Method>
+        <Field isStatic='true' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+               signature='Lcom/pallasathenagroup/capsule/models/Tag;' name='actualTag1' primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>In CapsuleTargetTest.java</Message>
+            </SourceLine>
+            <Message>Field com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.actualTag1</Message>
+        </Field>
+        <SourceLine endBytecode='30' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' start='69'
+                    end='69' sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                    sourcefile='CapsuleTargetTest.java' startBytecode='30' primary='true'>
+            <Message>At CapsuleTargetTest.java:[line 69]</Message>
+        </SourceLine>
+    </BugInstance>
+    <BugInstance instanceOccurrenceNum='0' instanceHash='efe9607bc28c164a9ef9e40701744b3' rank='17' abbrev='ST'
+                 category='STYLE' priority='2' type='ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD' instanceOccurrenceMax='0'>
+        <ShortMessage>Write to static field from instance method</ShortMessage>
+        <LongMessage>Write to static field com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.actualTag2 from
+            instance method com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step01_CreateTags()
+        </LongMessage>
+        <Class classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' start='37' end='266'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>At CapsuleTargetTest.java:[lines 37-266]</Message>
+            </SourceLine>
+            <Message>In class com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest</Message>
+        </Class>
+        <Method isStatic='false' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' signature='()V'
+                name='step01_CreateTags' primary='true'>
+            <SourceLine endBytecode='226' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        start='66' end='78'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java' startBytecode='0'></SourceLine>
+            <Message>In method com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step01_CreateTags()</Message>
+        </Method>
+        <Field isStatic='true' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+               signature='Lcom/pallasathenagroup/capsule/models/Tag;' name='actualTag2' primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>In CapsuleTargetTest.java</Message>
+            </SourceLine>
+            <Message>Field com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.actualTag2</Message>
+        </Field>
+        <SourceLine endBytecode='45' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' start='70'
+                    end='70' sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                    sourcefile='CapsuleTargetTest.java' startBytecode='45' primary='true'>
+            <Message>At CapsuleTargetTest.java:[line 70]</Message>
+        </SourceLine>
+    </BugInstance>
+    <BugInstance instanceOccurrenceNum='0' instanceHash='58be7c84dc191138358b05e141263405' rank='17' abbrev='ST'
+                 category='STYLE' priority='2' type='ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD' instanceOccurrenceMax='0'>
+        <ShortMessage>Write to static field from instance method</ShortMessage>
+        <LongMessage>Write to static field com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.actualParty from
+            instance method com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step02_CreateParty()
+        </LongMessage>
+        <Class classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' start='37' end='266'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>At CapsuleTargetTest.java:[lines 37-266]</Message>
+            </SourceLine>
+            <Message>In class com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest</Message>
+        </Class>
+        <Method isStatic='false' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' signature='()V'
+                name='step02_CreateParty' primary='true'>
+            <SourceLine endBytecode='279' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        start='82' end='92'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java' startBytecode='0'></SourceLine>
+            <Message>In method com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step02_CreateParty()
+            </Message>
+        </Method>
+        <Field isStatic='true' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+               signature='Lcom/pallasathenagroup/capsule/models/Party;' name='actualParty' primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>In CapsuleTargetTest.java</Message>
+            </SourceLine>
+            <Message>Field com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.actualParty</Message>
+        </Field>
+        <SourceLine endBytecode='56' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' start='85'
+                    end='85' sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                    sourcefile='CapsuleTargetTest.java' startBytecode='56' primary='true'>
+            <Message>At CapsuleTargetTest.java:[line 85]</Message>
+        </SourceLine>
+    </BugInstance>
+    <BugInstance instanceOccurrenceNum='0' instanceHash='58e7525dfc2d9f436b1cf2b8bdf960e0' rank='17' abbrev='ST'
+                 category='STYLE' priority='2' type='ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD' instanceOccurrenceMax='0'>
+        <ShortMessage>Write to static field from instance method</ShortMessage>
+        <LongMessage>Write to static field com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.actualPhoneNumber
+            from instance method com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step02_CreateParty()
+        </LongMessage>
+        <Class classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' start='37' end='266'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>At CapsuleTargetTest.java:[lines 37-266]</Message>
+            </SourceLine>
+            <Message>In class com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest</Message>
+        </Class>
+        <Method isStatic='false' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' signature='()V'
+                name='step02_CreateParty' primary='true'>
+            <SourceLine endBytecode='279' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        start='82' end='92'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java' startBytecode='0'></SourceLine>
+            <Message>In method com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step02_CreateParty()
+            </Message>
+        </Method>
+        <Field isStatic='true' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+               signature='Lcom/pallasathenagroup/capsule/models/PhoneNumber;' name='actualPhoneNumber' primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>In CapsuleTargetTest.java</Message>
+            </SourceLine>
+            <Message>Field com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.actualPhoneNumber</Message>
+        </Field>
+        <SourceLine endBytecode='78' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' start='86'
+                    end='86' sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                    sourcefile='CapsuleTargetTest.java' startBytecode='78' primary='true'>
+            <Message>At CapsuleTargetTest.java:[line 86]</Message>
+        </SourceLine>
+    </BugInstance>
+    <BugInstance instanceOccurrenceNum='0' instanceHash='f1a43c93fe197090325b3154517f2f7' rank='17' abbrev='ST'
+                 category='STYLE' priority='2' type='ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD' instanceOccurrenceMax='0'>
+        <ShortMessage>Write to static field from instance method</ShortMessage>
+        <LongMessage>Write to static field com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.party from
+            instance method com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step02_CreateParty()
+        </LongMessage>
+        <Class classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' start='37' end='266'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>At CapsuleTargetTest.java:[lines 37-266]</Message>
+            </SourceLine>
+            <Message>In class com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest</Message>
+        </Class>
+        <Method isStatic='false' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' signature='()V'
+                name='step02_CreateParty' primary='true'>
+            <SourceLine endBytecode='279' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        start='82' end='92'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java' startBytecode='0'></SourceLine>
+            <Message>In method com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step02_CreateParty()
+            </Message>
+        </Method>
+        <Field isStatic='true' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+               signature='Lcom/pallasathenagroup/capsule/models/Party;' name='party' primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>In CapsuleTargetTest.java</Message>
+            </SourceLine>
+            <Message>Field com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.party</Message>
+        </Field>
+        <SourceLine endBytecode='38' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' start='83'
+                    end='83' sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                    sourcefile='CapsuleTargetTest.java' startBytecode='38' primary='true'>
+            <Message>At CapsuleTargetTest.java:[line 83]</Message>
+        </SourceLine>
+    </BugInstance>
+    <BugInstance instanceOccurrenceNum='0' instanceHash='a5ae6c17373ad82b6ca6844360d74966' rank='17' abbrev='ST'
+                 category='STYLE' priority='2' type='ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD' instanceOccurrenceMax='0'>
+        <ShortMessage>Write to static field from instance method</ShortMessage>
+        <LongMessage>Write to static field
+            com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.actualFieldDefinition from instance method
+            com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step03_CreateFieldDefinitions()
+        </LongMessage>
+        <Class classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' start='37' end='266'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>At CapsuleTargetTest.java:[lines 37-266]</Message>
+            </SourceLine>
+            <Message>In class com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest</Message>
+        </Class>
+        <Method isStatic='false' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' signature='()V'
+                name='step03_CreateFieldDefinitions' primary='true'>
+            <SourceLine endBytecode='112' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        start='96' end='102'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java' startBytecode='0'></SourceLine>
+            <Message>In method
+                com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step03_CreateFieldDefinitions()
+            </Message>
+        </Method>
+        <Field isStatic='true' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+               signature='Lcom/pallasathenagroup/capsule/models/FieldDefinition;' name='actualFieldDefinition'
+               primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>In CapsuleTargetTest.java</Message>
+            </SourceLine>
+            <Message>Field com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.actualFieldDefinition</Message>
+        </Field>
+        <SourceLine endBytecode='21' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' start='98'
+                    end='98' sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                    sourcefile='CapsuleTargetTest.java' startBytecode='21' primary='true'>
+            <Message>At CapsuleTargetTest.java:[line 98]</Message>
+        </SourceLine>
+    </BugInstance>
+    <BugInstance instanceOccurrenceNum='0' instanceHash='9bd3efa1ab847392917dbf98daaae1e6' rank='17' abbrev='ST'
+                 category='STYLE' priority='2' type='ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD' instanceOccurrenceMax='0'>
+        <ShortMessage>Write to static field from instance method</ShortMessage>
+        <LongMessage>Write to static field
+            com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.actualUpdatedParty from instance method
+            com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step04_UpdateParty()
+        </LongMessage>
+        <Class classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' start='37' end='266'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>At CapsuleTargetTest.java:[lines 37-266]</Message>
+            </SourceLine>
+            <Message>In class com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest</Message>
+        </Class>
+        <Method isStatic='false' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' signature='()V'
+                name='step04_UpdateParty' primary='true'>
+            <SourceLine endBytecode='449' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        start='106' end='138'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java' startBytecode='0'></SourceLine>
+            <Message>In method com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step04_UpdateParty()
+            </Message>
+        </Method>
+        <Field isStatic='true' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+               signature='Lcom/pallasathenagroup/capsule/models/Party;' name='actualUpdatedParty' primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>In CapsuleTargetTest.java</Message>
+            </SourceLine>
+            <Message>Field com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.actualUpdatedParty</Message>
+        </Field>
+        <SourceLine endBytecode='105' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                    start='119' end='119' sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                    sourcefile='CapsuleTargetTest.java' startBytecode='105' primary='true'>
+            <Message>At CapsuleTargetTest.java:[line 119]</Message>
+        </SourceLine>
+    </BugInstance>
+    <BugInstance instanceOccurrenceNum='0' instanceHash='5a8ee6e0d9932bec23d83c1b76854afc' rank='17' abbrev='ST'
+                 category='STYLE' priority='2' type='ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD' instanceOccurrenceMax='0'>
+        <ShortMessage>Write to static field from instance method</ShortMessage>
+        <LongMessage>Write to static field com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.fieldValue from
+            instance method com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step04_UpdateParty()
+        </LongMessage>
+        <Class classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' start='37' end='266'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>At CapsuleTargetTest.java:[lines 37-266]</Message>
+            </SourceLine>
+            <Message>In class com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest</Message>
+        </Class>
+        <Method isStatic='false' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' signature='()V'
+                name='step04_UpdateParty' primary='true'>
+            <SourceLine endBytecode='449' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        start='106' end='138'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java' startBytecode='0'></SourceLine>
+            <Message>In method com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step04_UpdateParty()
+            </Message>
+        </Method>
+        <Field isStatic='true' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+               signature='Lcom/pallasathenagroup/capsule/models/FieldValue;' name='fieldValue' primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>In CapsuleTargetTest.java</Message>
+            </SourceLine>
+            <Message>Field com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.fieldValue</Message>
+        </Field>
+        <SourceLine endBytecode='36' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' start='112'
+                    end='112' sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                    sourcefile='CapsuleTargetTest.java' startBytecode='36' primary='true'>
+            <Message>At CapsuleTargetTest.java:[line 112]</Message>
+        </SourceLine>
+    </BugInstance>
+    <BugInstance instanceOccurrenceNum='0' instanceHash='98fd7d094e46b7f8a34bcbe452bf9d9b' rank='17' abbrev='ST'
+                 category='STYLE' priority='2' type='ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD' instanceOccurrenceMax='0'>
+        <ShortMessage>Write to static field from instance method</ShortMessage>
+        <LongMessage>Write to static field com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.newTag from
+            instance method com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step04_UpdateParty()
+        </LongMessage>
+        <Class classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' start='37' end='266'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>At CapsuleTargetTest.java:[lines 37-266]</Message>
+            </SourceLine>
+            <Message>In class com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest</Message>
+        </Class>
+        <Method isStatic='false' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' signature='()V'
+                name='step04_UpdateParty' primary='true'>
+            <SourceLine endBytecode='449' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        start='106' end='138'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java' startBytecode='0'></SourceLine>
+            <Message>In method com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.step04_UpdateParty()
+            </Message>
+        </Method>
+        <Field isStatic='true' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+               signature='Lcom/pallasathenagroup/capsule/models/Tag;' name='newTag' primary='true'>
+            <SourceLine classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'
+                        sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                        sourcefile='CapsuleTargetTest.java'>
+                <Message>In CapsuleTargetTest.java</Message>
+            </SourceLine>
+            <Message>Field com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest.newTag</Message>
+        </Field>
+        <SourceLine endBytecode='45' classname='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest' start='114'
+                    end='114' sourcepath='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java'
+                    sourcefile='CapsuleTargetTest.java' startBytecode='45' primary='true'>
+            <Message>At CapsuleTargetTest.java:[line 114]</Message>
+        </SourceLine>
+    </BugInstance>
+    <BugCategory category='STYLE'>
+        <Description>Dodgy code</Description>
+    </BugCategory>
+    <BugPattern abbrev='ST' category='STYLE' type='ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD'>
+        <ShortDescription>Write to static field from instance method</ShortDescription>
+        <Details>
+
+            &lt;p&gt; This instance method writes to a static field. This is tricky to get
+            correct if multiple instances are being manipulated,
+            and generally bad practice.
+            &lt;/p&gt;
+
+        </Details>
+    </BugPattern>
+    <BugCode abbrev='ST'>
+        <Description>Misuse of static fields</Description>
+    </BugCode>
+    <Errors missingClasses='3' errors='0'>
+        <MissingClass>accept</MissingClass>
+        <MissingClass>apply</MissingClass>
+        <MissingClass>test</MissingClass>
+    </Errors>
+    <FindBugsSummary num_packages='3' total_classes='54' priority_1='3' priority_2='9' total_size='1235'
+                     clock_seconds='6.48' referenced_classes='187' vm_version='25.252-b14' total_bugs='12'
+                     java_version='1.8.0_252' gc_seconds='0.41' alloc_mbytes='455.50' cpu_seconds='12.60'
+                     peak_mbytes='249.23' timestamp='Thu, 11 Jun 2020 22:26:55 +0000'>
+        <FileStats path='com/pallasathenagroup/capsule/client/CapsuleException.java' size='4' bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/client/CapsuleTarget.java' size='248' bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/client/impl/CapsuleTargetTest.java' size='163'
+                   bugHash='7aa42ab0faeacfb049adcd018f7a7e56' bugCount='12'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/client/impl/ObjectMapperProvider.java' size='12'
+                   bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/client/impl/TokenAuthenticationFilter.java' size='9'
+                   bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/models/ActivityType.java' size='23' bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/models/ActivityTypeIcon.java' size='27' bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/models/Address.java' size='46' bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/models/Category.java' size='19' bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/models/Country.java' size='23' bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/models/Currency.java' size='23' bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/models/EmailAddress.java' size='29' bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/models/ExceptionModel.java' size='32' bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/models/FieldDefinition.java' size='62' bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/models/FieldValue.java' size='26' bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/models/FieldValueSerializeTest.java' size='10'
+                   bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/models/NestedCase.java' size='19' bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/models/NestedFieldDefinition.java' size='15'
+                   bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/models/NestedParty.java' size='35' bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/models/NestedTeam.java' size='15' bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/models/NestedUser.java' size='19' bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/models/Party.java' size='120' bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/models/PhoneNumber.java' size='36' bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/models/ResponseModelTest.java' size='28'
+                   bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/models/Tag.java' size='27' bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/models/Team.java' size='27' bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/models/User.java' size='80' bugCount='0'></FileStats>
+        <FileStats path='com/pallasathenagroup/capsule/models/Website.java' size='58' bugCount='0'></FileStats>
+        <PackageStats package='com.pallasathenagroup.capsule.client' total_bugs='0' total_size='252' total_types='16'>
+            <ClassStats bugs='0' size='4' interface='false' sourceFile='CapsuleException.java'
+                        class='com.pallasathenagroup.capsule.client.CapsuleException'></ClassStats>
+            <ClassStats bugs='0' size='178' interface='false' sourceFile='CapsuleTarget.java'
+                        class='com.pallasathenagroup.capsule.client.CapsuleTarget'></ClassStats>
+            <ClassStats bugs='0' size='4' interface='false' sourceFile='CapsuleTarget.java'
+                        class='com.pallasathenagroup.capsule.client.CapsuleTarget$1'></ClassStats>
+            <ClassStats bugs='0' size='4' interface='false' sourceFile='CapsuleTarget.java'
+                        class='com.pallasathenagroup.capsule.client.CapsuleTarget$10'></ClassStats>
+            <ClassStats bugs='0' size='4' interface='false' sourceFile='CapsuleTarget.java'
+                        class='com.pallasathenagroup.capsule.client.CapsuleTarget$11'></ClassStats>
+            <ClassStats bugs='0' size='4' interface='false' sourceFile='CapsuleTarget.java'
+                        class='com.pallasathenagroup.capsule.client.CapsuleTarget$12'></ClassStats>
+            <ClassStats bugs='0' size='4' interface='false' sourceFile='CapsuleTarget.java'
+                        class='com.pallasathenagroup.capsule.client.CapsuleTarget$2'></ClassStats>
+            <ClassStats bugs='0' size='4' interface='false' sourceFile='CapsuleTarget.java'
+                        class='com.pallasathenagroup.capsule.client.CapsuleTarget$3'></ClassStats>
+            <ClassStats bugs='0' size='4' interface='false' sourceFile='CapsuleTarget.java'
+                        class='com.pallasathenagroup.capsule.client.CapsuleTarget$4'></ClassStats>
+            <ClassStats bugs='0' size='4' interface='false' sourceFile='CapsuleTarget.java'
+                        class='com.pallasathenagroup.capsule.client.CapsuleTarget$5'></ClassStats>
+            <ClassStats bugs='0' size='4' interface='false' sourceFile='CapsuleTarget.java'
+                        class='com.pallasathenagroup.capsule.client.CapsuleTarget$6'></ClassStats>
+            <ClassStats bugs='0' size='4' interface='false' sourceFile='CapsuleTarget.java'
+                        class='com.pallasathenagroup.capsule.client.CapsuleTarget$7'></ClassStats>
+            <ClassStats bugs='0' size='4' interface='false' sourceFile='CapsuleTarget.java'
+                        class='com.pallasathenagroup.capsule.client.CapsuleTarget$8'></ClassStats>
+            <ClassStats bugs='0' size='4' interface='false' sourceFile='CapsuleTarget.java'
+                        class='com.pallasathenagroup.capsule.client.CapsuleTarget$9'></ClassStats>
+            <ClassStats bugs='0' size='11' interface='false' sourceFile='CapsuleTarget.java'
+                        class='com.pallasathenagroup.capsule.client.CapsuleTarget$EmbedType'></ClassStats>
+            <ClassStats bugs='0' size='11' interface='false' sourceFile='CapsuleTarget.java'
+                        class='com.pallasathenagroup.capsule.client.CapsuleTarget$EntityType'></ClassStats>
+        </PackageStats>
+        <PackageStats package='com.pallasathenagroup.capsule.client.impl' priority_1='3' total_bugs='12' priority_2='9'
+                      total_size='184' total_types='3'>
+            <ClassStats bugs='12' size='163' priority_1='3' priority_2='9' interface='false'
+                        sourceFile='CapsuleTargetTest.java'
+                        class='com.pallasathenagroup.capsule.client.impl.CapsuleTargetTest'></ClassStats>
+            <ClassStats bugs='0' size='12' interface='false' sourceFile='ObjectMapperProvider.java'
+                        class='com.pallasathenagroup.capsule.client.impl.ObjectMapperProvider'></ClassStats>
+            <ClassStats bugs='0' size='9' interface='false' sourceFile='TokenAuthenticationFilter.java'
+                        class='com.pallasathenagroup.capsule.client.impl.TokenAuthenticationFilter'></ClassStats>
+        </PackageStats>
+        <PackageStats package='com.pallasathenagroup.capsule.models' total_bugs='0' total_size='799' total_types='35'>
+            <ClassStats bugs='0' size='23' interface='false' sourceFile='ActivityType.java'
+                        class='com.pallasathenagroup.capsule.models.ActivityType'></ClassStats>
+            <ClassStats bugs='0' size='27' interface='false' sourceFile='ActivityTypeIcon.java'
+                        class='com.pallasathenagroup.capsule.models.ActivityTypeIcon'></ClassStats>
+            <ClassStats bugs='0' size='35' interface='false' sourceFile='Address.java'
+                        class='com.pallasathenagroup.capsule.models.Address'></ClassStats>
+            <ClassStats bugs='0' size='11' interface='false' sourceFile='Address.java'
+                        class='com.pallasathenagroup.capsule.models.Address$Type'></ClassStats>
+            <ClassStats bugs='0' size='19' interface='false' sourceFile='Category.java'
+                        class='com.pallasathenagroup.capsule.models.Category'></ClassStats>
+            <ClassStats bugs='0' size='23' interface='false' sourceFile='Country.java'
+                        class='com.pallasathenagroup.capsule.models.Country'></ClassStats>
+            <ClassStats bugs='0' size='23' interface='false' sourceFile='Currency.java'
+                        class='com.pallasathenagroup.capsule.models.Currency'></ClassStats>
+            <ClassStats bugs='0' size='19' interface='false' sourceFile='EmailAddress.java'
+                        class='com.pallasathenagroup.capsule.models.EmailAddress'></ClassStats>
+            <ClassStats bugs='0' size='10' interface='false' sourceFile='EmailAddress.java'
+                        class='com.pallasathenagroup.capsule.models.EmailAddress$Type'></ClassStats>
+            <ClassStats bugs='0' size='15' interface='false' sourceFile='ExceptionModel.java'
+                        class='com.pallasathenagroup.capsule.models.ExceptionModel'></ClassStats>
+            <ClassStats bugs='0' size='17' interface='false' sourceFile='ExceptionModel.java'
+                        class='com.pallasathenagroup.capsule.models.ExceptionModel$ValidationError'></ClassStats>
+            <ClassStats bugs='0' size='35' interface='false' sourceFile='FieldDefinition.java'
+                        class='com.pallasathenagroup.capsule.models.FieldDefinition'></ClassStats>
+            <ClassStats bugs='0' size='10' interface='false' sourceFile='FieldDefinition.java'
+                        class='com.pallasathenagroup.capsule.models.FieldDefinition$CaptureRule'></ClassStats>
+            <ClassStats bugs='0' size='17' interface='false' sourceFile='FieldDefinition.java'
+                        class='com.pallasathenagroup.capsule.models.FieldDefinition$Type'></ClassStats>
+            <ClassStats bugs='0' size='26' interface='false' sourceFile='FieldValue.java'
+                        class='com.pallasathenagroup.capsule.models.FieldValue'></ClassStats>
+            <ClassStats bugs='0' size='10' interface='false' sourceFile='FieldValueSerializeTest.java'
+                        class='com.pallasathenagroup.capsule.models.FieldValueSerializeTest'></ClassStats>
+            <ClassStats bugs='0' size='19' interface='false' sourceFile='NestedCase.java'
+                        class='com.pallasathenagroup.capsule.models.NestedCase'></ClassStats>
+            <ClassStats bugs='0' size='15' interface='false' sourceFile='NestedFieldDefinition.java'
+                        class='com.pallasathenagroup.capsule.models.NestedFieldDefinition'></ClassStats>
+            <ClassStats bugs='0' size='35' interface='false' sourceFile='NestedParty.java'
+                        class='com.pallasathenagroup.capsule.models.NestedParty'></ClassStats>
+            <ClassStats bugs='0' size='15' interface='false' sourceFile='NestedTeam.java'
+                        class='com.pallasathenagroup.capsule.models.NestedTeam'></ClassStats>
+            <ClassStats bugs='0' size='19' interface='false' sourceFile='NestedUser.java'
+                        class='com.pallasathenagroup.capsule.models.NestedUser'></ClassStats>
+            <ClassStats bugs='0' size='95' interface='false' sourceFile='Party.java'
+                        class='com.pallasathenagroup.capsule.models.Party'></ClassStats>
+            <ClassStats bugs='0' size='15' interface='false' sourceFile='Party.java'
+                        class='com.pallasathenagroup.capsule.models.Party$Title'></ClassStats>
+            <ClassStats bugs='0' size='10' interface='false' sourceFile='Party.java'
+                        class='com.pallasathenagroup.capsule.models.Party$Type'></ClassStats>
+            <ClassStats bugs='0' size='23' interface='false' sourceFile='PhoneNumber.java'
+                        class='com.pallasathenagroup.capsule.models.PhoneNumber'></ClassStats>
+            <ClassStats bugs='0' size='13' interface='false' sourceFile='PhoneNumber.java'
+                        class='com.pallasathenagroup.capsule.models.PhoneNumber$Type'></ClassStats>
+            <ClassStats bugs='0' size='28' interface='false' sourceFile='ResponseModelTest.java'
+                        class='com.pallasathenagroup.capsule.models.ResponseModelTest'></ClassStats>
+            <ClassStats bugs='0' size='27' interface='false' sourceFile='Tag.java'
+                        class='com.pallasathenagroup.capsule.models.Tag'></ClassStats>
+            <ClassStats bugs='0' size='27' interface='false' sourceFile='Team.java'
+                        class='com.pallasathenagroup.capsule.models.Team'></ClassStats>
+            <ClassStats bugs='0' size='59' interface='false' sourceFile='User.java'
+                        class='com.pallasathenagroup.capsule.models.User'></ClassStats>
+            <ClassStats bugs='0' size='12' interface='false' sourceFile='User.java'
+                        class='com.pallasathenagroup.capsule.models.User$ClickToCallPreference'></ClassStats>
+            <ClassStats bugs='0' size='9' interface='false' sourceFile='User.java'
+                        class='com.pallasathenagroup.capsule.models.User$EmailPreference'></ClassStats>
+            <ClassStats bugs='0' size='27' interface='false' sourceFile='Website.java'
+                        class='com.pallasathenagroup.capsule.models.Website'></ClassStats>
+            <ClassStats bugs='0' size='21' interface='false' sourceFile='Website.java'
+                        class='com.pallasathenagroup.capsule.models.Website$Service'></ClassStats>
+            <ClassStats bugs='0' size='10' interface='false' sourceFile='Website.java'
+                        class='com.pallasathenagroup.capsule.models.Website$Type'></ClassStats>
+        </PackageStats>
+        <FindBugsProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='425' totalMilliseconds='514'
+                          name='edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine'
+                          maxMicrosecondsPerInvocation='55092' standardDeviationMicrosecondsPerInvocation='1856'
+                          invocations='1210'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='265' totalMilliseconds='323'
+                          name='edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine'
+                          maxMicrosecondsPerInvocation='40903' standardDeviationMicrosecondsPerInvocation='1209'
+                          invocations='1215'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='446' totalMilliseconds='206'
+                          name='edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder'
+                          maxMicrosecondsPerInvocation='22763' standardDeviationMicrosecondsPerInvocation='1794'
+                          invocations='462'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='436' totalMilliseconds='203'
+                          name='edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory'
+                          maxMicrosecondsPerInvocation='26555' standardDeviationMicrosecondsPerInvocation='1760'
+                          invocations='467'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='399' totalMilliseconds='191'
+                          name='edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory'
+                          maxMicrosecondsPerInvocation='38216' standardDeviationMicrosecondsPerInvocation='2040'
+                          invocations='479'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='19101' totalMilliseconds='191'
+                          name='edu.umd.cs.findbugs.classfile.engine.bcel.ObligationDataflowFactory'
+                          maxMicrosecondsPerInvocation='190712' standardDeviationMicrosecondsPerInvocation='57203'
+                          invocations='10'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='364' totalMilliseconds='176'
+                          name='edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory'
+                          maxMicrosecondsPerInvocation='14330' standardDeviationMicrosecondsPerInvocation='1378'
+                          invocations='484'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='375' totalMilliseconds='175'
+                          name='com.h3xstream.findsecbugs.taintanalysis.TaintDataflowEngine'
+                          maxMicrosecondsPerInvocation='14138' standardDeviationMicrosecondsPerInvocation='1235'
+                          invocations='467'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='894' totalMilliseconds='167'
+                          name='edu.umd.cs.findbugs.detect.FieldItemSummary' maxMicrosecondsPerInvocation='25166'
+                          standardDeviationMicrosecondsPerInvocation='2390' invocations='187'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='353' totalMilliseconds='165'
+                          name='edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory'
+                          maxMicrosecondsPerInvocation='12183' standardDeviationMicrosecondsPerInvocation='1314'
+                          invocations='467'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='853' totalMilliseconds='159'
+                          name='edu.umd.cs.findbugs.detect.FindNoSideEffectMethods' maxMicrosecondsPerInvocation='16860'
+                          standardDeviationMicrosecondsPerInvocation='2068' invocations='187'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='336' totalMilliseconds='156'
+                          name='edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory'
+                          maxMicrosecondsPerInvocation='27475' standardDeviationMicrosecondsPerInvocation='1647'
+                          invocations='464'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='575' totalMilliseconds='124'
+                          name='edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis'
+                          maxMicrosecondsPerInvocation='49658' standardDeviationMicrosecondsPerInvocation='3469'
+                          invocations='216'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='221' totalMilliseconds='103'
+                          name='edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory'
+                          maxMicrosecondsPerInvocation='55607' standardDeviationMicrosecondsPerInvocation='2624'
+                          invocations='467'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='86' totalMilliseconds='98'
+                          name='edu.umd.cs.findbugs.util.TopologicalSort' maxMicrosecondsPerInvocation='8231'
+                          standardDeviationMicrosecondsPerInvocation='440' invocations='1141'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='107' totalMilliseconds='78'
+                          name='edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory' maxMicrosecondsPerInvocation='8115'
+                          standardDeviationMicrosecondsPerInvocation='374' invocations='728'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='265' totalMilliseconds='77'
+                          name='edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine'
+                          maxMicrosecondsPerInvocation='20025' standardDeviationMicrosecondsPerInvocation='1313'
+                          invocations='293'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='340' totalMilliseconds='63'
+                          name='edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers'
+                          maxMicrosecondsPerInvocation='12832' standardDeviationMicrosecondsPerInvocation='1031'
+                          invocations='187'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='303' totalMilliseconds='56'
+                          name='edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase'
+                          maxMicrosecondsPerInvocation='9053' standardDeviationMicrosecondsPerInvocation='979'
+                          invocations='187'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='4' totalMilliseconds='56'
+                          name='edu.umd.cs.findbugs.DetectorToDetector2Adapter' maxMicrosecondsPerInvocation='8094'
+                          standardDeviationMicrosecondsPerInvocation='152' invocations='12819'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='122' totalMilliseconds='56'
+                          name='edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory'
+                          maxMicrosecondsPerInvocation='11646' standardDeviationMicrosecondsPerInvocation='811'
+                          invocations='457'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='1027' totalMilliseconds='55'
+                          name='edu.umd.cs.findbugs.detect.FindBadCast2' maxMicrosecondsPerInvocation='11626'
+                          standardDeviationMicrosecondsPerInvocation='2483' invocations='54'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='292' totalMilliseconds='54'
+                          name='edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures'
+                          maxMicrosecondsPerInvocation='9308' standardDeviationMicrosecondsPerInvocation='875'
+                          invocations='187'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='283' totalMilliseconds='53'
+                          name='edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical'
+                          maxMicrosecondsPerInvocation='27725' standardDeviationMicrosecondsPerInvocation='2023'
+                          invocations='187'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='952' totalMilliseconds='51'
+                          name='edu.umd.cs.findbugs.detect.UnreadFields' maxMicrosecondsPerInvocation='19879'
+                          standardDeviationMicrosecondsPerInvocation='3178' invocations='54'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='930' totalMilliseconds='50'
+                          name='edu.umd.cs.findbugs.detect.DumbMethods' maxMicrosecondsPerInvocation='11017'
+                          standardDeviationMicrosecondsPerInvocation='2199' invocations='54'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='102' totalMilliseconds='47'
+                          name='edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory'
+                          maxMicrosecondsPerInvocation='6796' standardDeviationMicrosecondsPerInvocation='472'
+                          invocations='467'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='246' totalMilliseconds='46'
+                          name='edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis'
+                          maxMicrosecondsPerInvocation='21587' standardDeviationMicrosecondsPerInvocation='1616'
+                          invocations='187'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='234' totalMilliseconds='43'
+                          name='edu.umd.cs.findbugs.detect.CalledMethods' maxMicrosecondsPerInvocation='10414'
+                          standardDeviationMicrosecondsPerInvocation='835' invocations='187'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='727' totalMilliseconds='39'
+                          name='edu.umd.cs.findbugs.detect.SerializableIdiom' maxMicrosecondsPerInvocation='19365'
+                          standardDeviationMicrosecondsPerInvocation='2622' invocations='54'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='84' totalMilliseconds='39'
+                          name='edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions'
+                          maxMicrosecondsPerInvocation='12142' standardDeviationMicrosecondsPerInvocation='689'
+                          invocations='462'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='689' totalMilliseconds='37'
+                          name='edu.umd.cs.findbugs.detect.SynchronizationOnSharedBuiltinConstant'
+                          maxMicrosecondsPerInvocation='27660' standardDeviationMicrosecondsPerInvocation='3730'
+                          invocations='54'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='164' totalMilliseconds='30'
+                          name='edu.umd.cs.findbugs.detect.BuildStringPassthruGraph' maxMicrosecondsPerInvocation='5568'
+                          standardDeviationMicrosecondsPerInvocation='490' invocations='187'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='569' totalMilliseconds='30'
+                          name='edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation'
+                          maxMicrosecondsPerInvocation='15880' standardDeviationMicrosecondsPerInvocation='2146'
+                          invocations='54'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='4' totalMilliseconds='30'
+                          name='edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase'
+                          maxMicrosecondsPerInvocation='2861' standardDeviationMicrosecondsPerInvocation='49'
+                          invocations='6587'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='549' totalMilliseconds='29'
+                          name='edu.umd.cs.findbugs.detect.FindInconsistentSync2' maxMicrosecondsPerInvocation='9331'
+                          standardDeviationMicrosecondsPerInvocation='1267' invocations='54'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='547' totalMilliseconds='29'
+                          name='com.h3xstream.findsecbugs.password.ConstantPasswordDetector'
+                          maxMicrosecondsPerInvocation='9045' standardDeviationMicrosecondsPerInvocation='1356'
+                          invocations='54'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='539' totalMilliseconds='29'
+                          name='edu.umd.cs.findbugs.detect.FindUseOfNonSerializableValue'
+                          maxMicrosecondsPerInvocation='8397' standardDeviationMicrosecondsPerInvocation='1399'
+                          invocations='54'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='534' totalMilliseconds='28'
+                          name='edu.umd.cs.findbugs.detect.FindNullDeref' maxMicrosecondsPerInvocation='12390'
+                          standardDeviationMicrosecondsPerInvocation='1708' invocations='54'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='152' totalMilliseconds='28'
+                          name='edu.umd.cs.findbugs.detect.ReflectiveClasses' maxMicrosecondsPerInvocation='2474'
+                          standardDeviationMicrosecondsPerInvocation='327' invocations='187'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='476' totalMilliseconds='25'
+                          name='edu.umd.cs.findbugs.detect.LoadOfKnownNullValue' maxMicrosecondsPerInvocation='4258'
+                          standardDeviationMicrosecondsPerInvocation='860' invocations='54'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='54' totalMilliseconds='25'
+                          name='edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory'
+                          maxMicrosecondsPerInvocation='6608' standardDeviationMicrosecondsPerInvocation='397'
+                          invocations='467'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='20' totalMilliseconds='24'
+                          name='edu.umd.cs.findbugs.classfile.engine.asm.ClassReaderAnalysisEngine'
+                          maxMicrosecondsPerInvocation='8027' standardDeviationMicrosecondsPerInvocation='275'
+                          invocations='1194'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='436' totalMilliseconds='23'
+                          name='edu.umd.cs.findbugs.detect.FindUnrelatedTypesInGenericContainer'
+                          maxMicrosecondsPerInvocation='11057' standardDeviationMicrosecondsPerInvocation='1770'
+                          invocations='54'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='415' totalMilliseconds='22'
+                          name='com.h3xstream.findsecbugs.injection.sql.AndroidSqlInjectionDetector'
+                          maxMicrosecondsPerInvocation='15391' standardDeviationMicrosecondsPerInvocation='2069'
+                          invocations='54'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='413' totalMilliseconds='22'
+                          name='edu.umd.cs.findbugs.detect.FindUselessObjects' maxMicrosecondsPerInvocation='5984'
+                          standardDeviationMicrosecondsPerInvocation='1012' invocations='54'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='402' totalMilliseconds='21'
+                          name='com.h3xstream.findsecbugs.file.PathTraversalDetector'
+                          maxMicrosecondsPerInvocation='6943' standardDeviationMicrosecondsPerInvocation='1064'
+                          invocations='54'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='402' totalMilliseconds='21'
+                          name='edu.umd.cs.findbugs.detect.FindUnsatisfiedObligation'
+                          maxMicrosecondsPerInvocation='8454' standardDeviationMicrosecondsPerInvocation='1166'
+                          invocations='54'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='391' totalMilliseconds='21'
+                          name='edu.umd.cs.findbugs.classfile.engine.bcel.ConstantPoolGenFactory'
+                          maxMicrosecondsPerInvocation='8363' standardDeviationMicrosecondsPerInvocation='1517'
+                          invocations='54'></ClassProfile>
+            <ClassProfile avgMicrosecondsPerInvocation='383' totalMilliseconds='20'
+                          name='edu.umd.cs.findbugs.detect.FindFloatEquality' maxMicrosecondsPerInvocation='9579'
+                          standardDeviationMicrosecondsPerInvocation='1412' invocations='54'></ClassProfile>
+        </FindBugsProfile>
+    </FindBugsSummary>
+    <ClassFeatures></ClassFeatures>
+    <History></History>
+</BugCollection>

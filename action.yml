@@ -1,10 +1,28 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Push SpotBugs report'
+description: 'Push SpotBugs Code Analysis report'
+author: 'Jan-Willem Gmelig Meyling'
 inputs:
-  myInput:              # change this
-    description: 'input description here'
-    default: 'default value if applicable'
+  path:
+    description: 'A file, directory or wildcard pattern that describes where to find the reports'
+    required: true
+  name:
+    description: 'Check run name under which the report is created'
+    default: spotbugs
+  title:
+    description: 'Check run title under which the report is created'
+    default: SpotBugs Source Code Analyzer report
+  token:
+    description: >
+      Personal access token (PAT) used to fetch the repository. The PAT is configured
+      with the local git config, which enables your scripts to run authenticated git
+      commands. The post-job step removes the PAT.
+      We recommend using a service account with the least permissions necessary.
+      Also when generating a new PAT, select the least scopes necessary.
+      [Learn more about creating and using encrypted secrets](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets)
+    default: ${{ github.token }}
 runs:
   using: 'node12'
   main: 'dist/index.js'
+branding:
+  icon: umbrella
+  color: purple

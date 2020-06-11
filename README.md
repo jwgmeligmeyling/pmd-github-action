@@ -1,20 +1,77 @@
-<p align="center">
-  <a href="https://github.com/actions/typescript-action/actions"><img alt="typescript-action status" src="https://github.com/actions/typescript-action/workflows/build-test/badge.svg"></a>
-</p>
+![build-test](https://github.com/jwgmeligmeyling/spotbugs-github-action/workflows/build-test/badge.svg)
 
-# Create a JavaScript Action using TypeScript
+# SpotBugs GitHub Action
 
-Use this template to bootstrap the creation of a JavaScript action.:rocket:
+This action pushes results from [SpotBugs](https://spotbugs.github.io/) (or [FindBugs](http://findbugs.sourceforge.net/)) as check run annotations. :rocket:
 
-This template includes compilication support, tests, a validation workflow, publishing, and versioning guidance.  
+The action can also be used for any other static analysis tools that produce reports in the SpotBugs XML format.
+The report itself must be generated in a former build step, for example a Maven build.
 
-If you are new, there's also a simpler introduction.  See the [Hello World JavaScript Action](https://github.com/actions/hello-world-javascript-action)
+![example](images/example.png)
 
-## Create an action from this template
+## Input
 
-Click the `Use this Template` and provide the new repo details for your action
+### `path`
+Required. A file, directory or wildcard pattern that describes where to find the reports.
+Multiple files can be processed through a [glob expression](https://github.com/actions/toolkit/tree/master/packages/glob), for example: `'**/spotbugsXml.xml'`.
 
-## Code in Master
+### `name`
+Optional. Name for the check run to create. Defaults to `spotbugs`.
+
+### `title`
+Optional. Title for the check run to create. Defaults to `SpotBugs Source Code Analyzer report`.
+
+### `token`
+Optional. GitHub API access token. Defaults to `${{ github.token }}`, which is set by `actions/checkout@v2` minimally.
+
+## Example usage
+
+```yaml
+name: Java CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
+    - uses: actions/cache@v1
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-maven-
+    - name: Build with Maven
+      run: mvn -B verify spotbugs:spotbugs
+    - uses: jwgmeligmeyling/spotbugs-github-action@v1
+      with:
+        path: '**/spotbugsXml.xml'
+```
+
+And do not forget to enable XML output for the Maven plugin:
+
+```xml
+<build>
+  <plugins>
+    <plugin>
+      <groupId>com.github.spotbugs</groupId>
+      <artifactId>spotbugs-maven-plugin</artifactId>
+      <version>4.0.0</version>
+      <configuration>
+        <xmlOutput>true</xmlOutput>
+        <failOnError>false</failOnError>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
+```
+
+## Contributing
 
 Install the dependencies  
 ```bash
@@ -37,65 +94,3 @@ $ npm test
 
 ...
 ```
-
-## Change action.yml
-
-The action.yml contains defines the inputs and output for your action.
-
-Update the action.yml with your name, description, inputs and outputs for your action.
-
-See the [documentation](https://help.github.com/en/articles/metadata-syntax-for-github-actions)
-
-## Change the Code
-
-Most toolkit and CI/CD operations involve async operations so the action is run in an async function.
-
-```javascript
-import * as core from '@actions/core';
-...
-
-async function run() {
-  try { 
-      ...
-  } 
-  catch (error) {
-    core.setFailed(error.message);
-  }
-}
-
-run()
-```
-
-See the [toolkit documentation](https://github.com/actions/toolkit/blob/master/README.md#packages) for the various packages.
-
-## Publish to a distribution branch
-
-Actions are run from GitHub repos so we will checkin the packed dist folder. 
-
-Then run [ncc](https://github.com/zeit/ncc) and push the results:
-```bash
-$ npm run pack
-$ git add dist
-$ git commit -a -m "prod dependencies"
-$ git push origin releases/v1
-```
-
-Your action is now published! :rocket: 
-
-See the [versioning documentation](https://github.com/actions/toolkit/blob/master/docs/action-versioning.md)
-
-## Validate
-
-You can now validate the action by referencing `./` in a workflow in your repo (see [test.yml](.github/workflows/test.yml)])
-
-```yaml
-uses: ./
-with:
-  milliseconds: 1000
-```
-
-See the [actions tab](https://github.com/actions/javascript-action/actions) for runs of this action! :rocket:
-
-## Usage:
-
-After testing you can [create a v1 tag](https://github.com/actions/toolkit/blob/master/docs/action-versioning.md) to reference the stable and latest V1 action
