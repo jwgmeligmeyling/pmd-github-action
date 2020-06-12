@@ -13,5 +13,5 @@ export interface Annotation {
   annotation_level: AnnotationLevel
   title: string
   message: string
-  raw_details: string
+  raw_details?: string
 }

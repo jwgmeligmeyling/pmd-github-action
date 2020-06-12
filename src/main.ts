@@ -71,7 +71,7 @@ async function createCheck(
       head_sha: context.sha,
       name,
       status: <const>'completed',
-      conclusion: <const>'neutral',
+      conclusion: numErrors === 0 ? <const>'success' : <const>'neutral',
       output: {
         title,
         summary: `${numErrors} violation(s) found`,
@@ -87,7 +87,7 @@ async function createCheck(
       ...context.repo,
       check_run_id,
       status: <const>'completed',
-      conclusion: <const>'neutral',
+      conclusion: numErrors === 0 ? <const>'success' : <const>'neutral',
       output: {
         title,
         summary: `${numErrors} violation(s) found`,
