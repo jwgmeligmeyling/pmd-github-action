@@ -13,8 +13,9 @@ test('parses file', async () => {
     __dirname,
     '..',
     'reports',
-    'spotbugsXml.xml'
+    'pmd.xml'
   )
   const annotations = annotationsForPath(spotBugsXml)
-  expect(annotations).toHaveLength(12)
+  console.debug(' %o', annotations)
+  expect(annotations).toHaveLength(171)
 })

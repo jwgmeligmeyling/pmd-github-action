@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+     version="6.21.0" timestamp="2020-06-12T17:52:58.420">
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\cte\EmployeeCourseGroupLedgerSummaryCte.java">
+        <violation beginline="72" endline="72" begincolumn="6" endcolumn="35" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.cte" class="EmployeeCourseGroupLedgerSummaryCte" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'org.hibernate.annotations.Type' due to existing import 'org.hibernate.annotations.Type'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\cte\EmployeePaymentCte.java">
+        <violation beginline="79" endline="79" begincolumn="6" endcolumn="35" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.cte" class="EmployeePaymentCte" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'org.hibernate.annotations.Type' due to existing import 'org.hibernate.annotations.Type'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\cte\finance\FinanceReportRowCte.java">
+        <violation beginline="41" endline="41" begincolumn="6" endcolumn="35" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.cte.finance" class="FinanceReportRowCte" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'org.hibernate.annotations.Type' due to existing import 'org.hibernate.annotations.Type'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\AthenaCourseBundleDiscountCode.java">
+        <violation beginline="23" endline="23" begincolumn="1" endcolumn="26" rule="UnusedImports" ruleset="Best Practices" package="com.pallasathenagroup.entities" class="AthenaCourseBundleDiscountCode" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+            Avoid unused imports such as 'java.util.Optional'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\AthenaStudiesCourseGroup.java">
+        <violation beginline="1" endline="834" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="com.pallasathenagroup.entities" class="AthenaStudiesCourseGroup" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+            Too many static imports may lead to messy code
+        </violation>
+        <violation beginline="266" endline="266" begincolumn="63" endcolumn="137" rule="UselessParentheses" ruleset="Code Style" package="com.pallasathenagroup.entities" class="AthenaStudiesCourseGroup" method="addCourseTimeSlot" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+            Useless parentheses.
+        </violation>
+        <violation beginline="447" endline="447" begincolumn="52" endcolumn="75" rule="UselessQualifiedThis" ruleset="Code Style" package="com.pallasathenagroup.entities" class="AthenaStudiesCourseGroup" method="setState" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessqualifiedthis" priority="3">
+            Useless qualified this usage in the same class.
+        </violation>
+        <violation beginline="473" endline="473" begincolumn="70" endcolumn="89" rule="UselessParentheses" ruleset="Code Style" package="com.pallasathenagroup.entities" class="AthenaStudiesCourseGroup" method="unpublish" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+            Useless parentheses.
+        </violation>
+        <violation beginline="711" endline="711" begincolumn="47" endcolumn="66" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entities" class="AthenaStudiesCourseGroup" method="getFacultyManagers" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'java.util.Collection' due to existing import 'java.util.Collection'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\CourseTimeSlot.java">
+        <violation beginline="14" endline="14" begincolumn="1" endcolumn="56" rule="UnusedImports" ruleset="Best Practices" package="com.pallasathenagroup.entities" class="CourseTimeSlot" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+            Avoid unused imports such as 'com.pallasathenagroup.entities.hermes.OrderEntry'
+        </violation>
+        <violation beginline="253" endline="253" begincolumn="91" endcolumn="104" rule="UselessQualifiedThis" ruleset="Code Style" package="com.pallasathenagroup.entities" class="CourseTimeSlot" method="preDestroy" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessqualifiedthis" priority="3">
+            Useless qualified this usage in the same class.
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\IdIdentifiable.java">
+        <violation beginline="54" endline="57" begincolumn="18" endcolumn="69" rule="UselessParentheses" ruleset="Code Style" package="com.pallasathenagroup.entities" class="IdIdentifiable" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+            Useless parentheses.
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\Product.java">
+        <violation beginline="100" endline="100" begincolumn="6" endcolumn="35" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entities" class="Product" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'org.hibernate.annotations.Type' due to existing import 'org.hibernate.annotations.Type'
+        </violation>
+        <violation beginline="137" endline="137" begincolumn="32" endcolumn="68" rule="UnusedPrivateMethod" ruleset="Best Practices" package="com.pallasathenagroup.entities" class="Product" method="getLikelyToBePaidOrPaidOrderEntries" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedprivatemethod" priority="3">
+            Avoid unused private methods such as 'getLikelyToBePaidOrPaidOrderEntries()'.
+        </violation>
+        <violation beginline="211" endline="211" begincolumn="17" endcolumn="58" rule="UselessParentheses" ruleset="Code Style" package="com.pallasathenagroup.entities" class="Product" method="hasProductAvailability" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+            Useless parentheses.
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\embeddables\ScopeProperties.java">
+        <violation beginline="17" endline="17" begincolumn="1" endcolumn="20" rule="UnusedImports" ruleset="Best Practices" package="com.pallasathenagroup.entities.embeddables" class="ScopeProperties" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+            Avoid unused imports such as 'java.net.URI'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\financial\EmployeePayment.java">
+        <violation beginline="79" endline="79" begincolumn="6" endcolumn="35" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entities.financial" class="EmployeePayment" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'org.hibernate.annotations.Type' due to existing import 'org.hibernate.annotations.Type'
+        </violation>
+        <violation beginline="84" endline="84" begincolumn="6" endcolumn="35" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entities.financial" class="EmployeePayment" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'org.hibernate.annotations.Type' due to existing import 'org.hibernate.annotations.Type'
+        </violation>
+        <violation beginline="93" endline="93" begincolumn="6" endcolumn="35" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entities.financial" class="EmployeePayment" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'org.hibernate.annotations.Type' due to existing import 'org.hibernate.annotations.Type'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\hermes\Order.java">
+        <violation beginline="1" endline="770" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="com.pallasathenagroup.entities.hermes" class="Order" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+            Too many static imports may lead to messy code
+        </violation>
+        <violation beginline="99" endline="99" begincolumn="9" endcolumn="28" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entities.hermes" class="Order" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Comparator.comparing' due to existing static import 'java.util.Comparator.comparing'
+        </violation>
+        <violation beginline="99" endline="99" begincolumn="58" endcolumn="77" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entities.hermes" class="Order" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Comparator.comparing' due to existing static import 'java.util.Comparator.comparing'
+        </violation>
+        <violation beginline="328" endline="328" begincolumn="13" endcolumn="27" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entities.hermes" class="Order" method="createCloneOrder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Objects.nonNull' due to existing static import 'java.util.Objects.nonNull'
+        </violation>
+        <violation beginline="346" endline="346" begincolumn="28" endcolumn="32" rule="UselessQualifiedThis" ruleset="Code Style" package="com.pallasathenagroup.entities.hermes" class="Order" method="refundOrder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessqualifiedthis" priority="3">
+            Useless qualified this usage in the same class.
+        </violation>
+        <violation beginline="385" endline="385" begincolumn="28" endcolumn="32" rule="UselessQualifiedThis" ruleset="Code Style" package="com.pallasathenagroup.entities.hermes" class="Order" method="refundProducts" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessqualifiedthis" priority="3">
+            Useless qualified this usage in the same class.
+        </violation>
+        <violation beginline="464" endline="464" begincolumn="28" endcolumn="32" rule="UselessQualifiedThis" ruleset="Code Style" package="com.pallasathenagroup.entities.hermes" class="Order" method="applyDiscountCode" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessqualifiedthis" priority="3">
+            Useless qualified this usage in the same class.
+        </violation>
+        <violation beginline="599" endline="599" begincolumn="62" endcolumn="131" rule="UselessParentheses" ruleset="Code Style" package="com.pallasathenagroup.entities.hermes" class="Order$SwapProductBuilder" method="with" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+            Useless parentheses.
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\hermes\OrderEntry.java">
+        <violation beginline="260" endline="260" begincolumn="59" endcolumn="68" rule="UselessQualifiedThis" ruleset="Code Style" package="com.pallasathenagroup.entities.hermes" class="OrderEntry" method="getRevenueSharingMapping" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessqualifiedthis" priority="3">
+            Useless qualified this usage in the same class.
+        </violation>
+        <violation beginline="272" endline="275" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Design" package="com.pallasathenagroup.entities.hermes" class="OrderEntry" method="getScopePartnerCosts" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#collapsibleifstatements" priority="3">
+            These nested if statements could be combined
+        </violation>
+        <violation beginline="284" endline="287" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Design" package="com.pallasathenagroup.entities.hermes" class="OrderEntry" method="getGlobalPartnerCosts" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#collapsibleifstatements" priority="3">
+            These nested if statements could be combined
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\hermes\ShoppingBasket.java">
+        <violation beginline="1" endline="372" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="com.pallasathenagroup.entities.hermes" class="ShoppingBasket" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+            Too many static imports may lead to messy code
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\iris\Application.java">
+        <violation beginline="198" endline="198" begincolumn="6" endcolumn="35" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entities.iris" class="Application" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'org.hibernate.annotations.Type' due to existing import 'org.hibernate.annotations.Type'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\iris\Contract.java">
+        <violation beginline="163" endline="163" begincolumn="6" endcolumn="35" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entities.iris" class="Contract" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'org.hibernate.annotations.Type' due to existing import 'org.hibernate.annotations.Type'
+        </violation>
+        <violation beginline="278" endline="278" begincolumn="17" endcolumn="81" rule="UselessParentheses" ruleset="Code Style" package="com.pallasathenagroup.entities.iris" class="Contract" method="getBonusOrRegularTeacherSalary" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+            Useless parentheses.
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\iris\Function.java">
+        <violation beginline="147" endline="147" begincolumn="23" endcolumn="52" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entities.iris" class="Function" method="compareTo" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'java.lang.NullPointerException' due to existing implicit import 'java.lang.*'
+        </violation>
+        <violation beginline="156" endline="156" begincolumn="23" endcolumn="52" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entities.iris" class="Function" method="isHigherRank" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'java.lang.NullPointerException' due to existing implicit import 'java.lang.*'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\iris\Refund.java">
+        <violation beginline="101" endline="101" begincolumn="6" endcolumn="35" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entities.iris" class="Refund" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'org.hibernate.annotations.Type' due to existing import 'org.hibernate.annotations.Type'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\ledger\AggregatedCourseGroupLedgerEntryType.java">
+        <violation beginline="1" endline="140" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="com.pallasathenagroup.entities.ledger" class="AggregatedCourseGroupLedgerEntryType" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+            Too many static imports may lead to messy code
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\ledger\ComputedCourseGroupLedgerSummary.java">
+        <violation beginline="1" endline="126" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="com.pallasathenagroup.entities.ledger" class="ComputedCourseGroupLedgerSummary" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+            Too many static imports may lead to messy code
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\ledger\ContractBasedEntry.java">
+        <violation beginline="36" endline="38" begincolumn="12" endcolumn="5" rule="UselessOverridingMethod" ruleset="Design" package="com.pallasathenagroup.entities.ledger" class="ContractBasedEntry" method="setContract" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#uselessoverridingmethod" priority="3">
+            Overriding method merely calls super
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\ledger\CourseTimeSlotBasedEntry.java">
+        <violation beginline="30" endline="32" begincolumn="12" endcolumn="5" rule="UselessOverridingMethod" ruleset="Design" package="com.pallasathenagroup.entities.ledger" class="CourseTimeSlotBasedEntry" method="setCourseTimeSlot" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#uselessoverridingmethod" priority="3">
+            Overriding method merely calls super
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\ledger\LedgerComputation.java">
+        <violation beginline="208" endline="208" begincolumn="34" endcolumn="59" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entities.ledger" class="LedgerComputation" method="computeBookletPrintingEntries" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'BigDecimalHelper.isNotZero' due to existing static import 'com.pallasathenagroup.entities.util.BigDecimalHelper.isNotZero'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\ledger\LocationEntry.java">
+        <violation beginline="34" endline="36" begincolumn="12" endcolumn="5" rule="UselessOverridingMethod" ruleset="Design" package="com.pallasathenagroup.entities.ledger" class="LocationEntry" method="setClassRoom" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#uselessoverridingmethod" priority="3">
+            Overriding method merely calls super
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\ledger\OrderEntryBasedEntry.java">
+        <violation beginline="30" endline="32" begincolumn="12" endcolumn="5" rule="UselessOverridingMethod" ruleset="Design" package="com.pallasathenagroup.entities.ledger" class="OrderEntryBasedEntry" method="setOrderEntry" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#uselessoverridingmethod" priority="3">
+            Overriding method merely calls super
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\ledger\OtherExpenseEntry.java">
+        <violation beginline="41" endline="43" begincolumn="12" endcolumn="5" rule="UselessOverridingMethod" ruleset="Design" package="com.pallasathenagroup.entities.ledger" class="OtherExpenseEntry" method="setCostItem" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#uselessoverridingmethod" priority="3">
+            Overriding method merely calls super
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\ledger\TeacherSalaryEntry.java">
+        <violation beginline="38" endline="40" begincolumn="12" endcolumn="5" rule="UselessOverridingMethod" ruleset="Design" package="com.pallasathenagroup.entities.ledger" class="TeacherSalaryEntry" method="setContract" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#uselessoverridingmethod" priority="3">
+            Overriding method merely calls super
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\listeners\AthenaStudiesCourseGroupStateTransitions.java">
+        <violation beginline="42" endline="42" begincolumn="21" endcolumn="52" rule="UselessParentheses" ruleset="Code Style" package="com.pallasathenagroup.entities.listeners" class="AthenaStudiesCourseGroupStateTransitions$TransitionImplementation" method="canTransition" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+            Useless parentheses.
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entities\mailchimp\MailchimpSynchronization.java">
+        <violation beginline="75" endline="75" begincolumn="6" endcolumn="35" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entities.mailchimp" class="MailchimpSynchronization" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'org.hibernate.annotations.Type' due to existing import 'org.hibernate.annotations.Type'
+        </violation>
+        <violation beginline="87" endline="87" begincolumn="6" endcolumn="35" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entities.mailchimp" class="MailchimpSynchronization" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'org.hibernate.annotations.Type' due to existing import 'org.hibernate.annotations.Type'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entitymanagers\AthenaStudiesCourseGroupEntityManager.java">
+        <violation beginline="1" endline="700" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManager" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+            Too many static imports may lead to messy code
+        </violation>
+        <violation beginline="697" endline="697" begincolumn="85" endcolumn="101" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManager" method="isAWeekOld" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'LocalDateTime.now' due to existing static import 'java.time.LocalDateTime.now'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entitymanagers\ClientEntityManager.java">
+        <violation beginline="22" endline="22" begincolumn="1" endcolumn="41" rule="UnusedImports" ruleset="Best Practices" package="com.pallasathenagroup.entitymanagers" class="ClientEntityManager" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+            Avoid unused imports such as 'org.hibernate.type.OrderedSetType'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entitymanagers\ContractEntityManager.java">
+        <violation beginline="13" endline="13" begincolumn="38" endcolumn="55" rule="UnusedPrivateField" ruleset="Best Practices" package="com.pallasathenagroup.entitymanagers" class="ContractEntityManager" variable="scopeEntityManager" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+            Avoid unused private fields such as 'scopeEntityManager'.
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entitymanagers\CourseTimeSlotEntityManager.java">
+        <violation beginline="1" endline="124" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="CourseTimeSlotEntityManager" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+            Too many static imports may lead to messy code
+        </violation>
+        <violation beginline="10" endline="10" begincolumn="1" endcolumn="56" rule="UnusedImports" ruleset="Best Practices" package="com.pallasathenagroup.entitymanagers" class="CourseTimeSlotEntityManager" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+            Avoid unused imports such as 'com.pallasathenagroup.entities.hermes.OrderEntry'
+        </violation>
+        <violation beginline="12" endline="12" begincolumn="1" endcolumn="52" rule="UnusedImports" ruleset="Best Practices" package="com.pallasathenagroup.entitymanagers" class="CourseTimeSlotEntityManager" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+            Avoid unused imports such as 'com.pallasathenagroup.entities.iris.Employee'
+        </violation>
+        <violation beginline="27" endline="27" begincolumn="1" endcolumn="21" rule="UnusedImports" ruleset="Best Practices" package="com.pallasathenagroup.entitymanagers" class="CourseTimeSlotEntityManager" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+            Avoid unused imports such as 'java.util.Set'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entitymanagers\FinanceEntityManager.java">
+        <violation beginline="1" endline="705" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="FinanceEntityManager" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+            Too many static imports may lead to messy code
+        </violation>
+        <violation beginline="281" endline="281" begincolumn="51" endcolumn="90" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="FinanceEntityManager" method="getIncomeAllocation" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'CourseGroupLedgerEntryType.GROSS_REVENUE' due to existing static import 'com.pallasathenagroup.entities.ledger.CourseGroupLedgerEntryType.GROSS_REVENUE'
+        </violation>
+        <violation beginline="285" endline="285" begincolumn="54" endcolumn="93" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="FinanceEntityManager" method="getIncomeAllocation" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'CourseGroupLedgerEntryType.GROSS_REVENUE' due to existing static import 'com.pallasathenagroup.entities.ledger.CourseGroupLedgerEntryType.GROSS_REVENUE'
+        </violation>
+        <violation beginline="336" endline="336" begincolumn="51" endcolumn="90" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="FinanceEntityManager" method="getPaynlIncomeAllocation" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'CourseGroupLedgerEntryType.GROSS_REVENUE' due to existing static import 'com.pallasathenagroup.entities.ledger.CourseGroupLedgerEntryType.GROSS_REVENUE'
+        </violation>
+        <violation beginline="340" endline="340" begincolumn="54" endcolumn="93" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="FinanceEntityManager" method="getPaynlIncomeAllocation" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'CourseGroupLedgerEntryType.GROSS_REVENUE' due to existing static import 'com.pallasathenagroup.entities.ledger.CourseGroupLedgerEntryType.GROSS_REVENUE'
+        </violation>
+        <violation beginline="391" endline="391" begincolumn="47" endcolumn="86" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="FinanceEntityManager" method="getPayPalIncomeAllocation" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'CourseGroupLedgerEntryType.GROSS_REVENUE' due to existing static import 'com.pallasathenagroup.entities.ledger.CourseGroupLedgerEntryType.GROSS_REVENUE'
+        </violation>
+        <violation beginline="395" endline="395" begincolumn="50" endcolumn="89" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="FinanceEntityManager" method="getPayPalIncomeAllocation" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'CourseGroupLedgerEntryType.GROSS_REVENUE' due to existing static import 'com.pallasathenagroup.entities.ledger.CourseGroupLedgerEntryType.GROSS_REVENUE'
+        </violation>
+        <violation beginline="437" endline="437" begincolumn="18" endcolumn="65" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="FinanceEntityManager" method="getRevenueCashflowForecast" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'AggregatedCourseGroupLedgerEntryType.NET_REVENUE' due to existing static import 'com.pallasathenagroup.entities.ledger.AggregatedCourseGroupLedgerEntryType.NET_REVENUE'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entitymanagers\OrderEntryEntityManager.java">
+        <violation beginline="36" endline="36" begincolumn="42" endcolumn="44" rule="UnusedPrivateField" ruleset="Best Practices" package="com.pallasathenagroup.entitymanagers" class="OrderEntryEntityManager" variable="cbf" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+            Avoid unused private fields such as 'cbf'.
+        </violation>
+        <violation beginline="81" endline="81" begincolumn="46" endcolumn="49" rule="UnusedLocalVariable" ruleset="Best Practices" package="com.pallasathenagroup.entitymanagers" class="OrderEntryEntityManager" method="getOrderEntries" variable="page" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+            Avoid unused local variables such as 'page'.
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entitymanagers\financial\EmployeePaymentBatchEntityManager.java">
+        <violation beginline="24" endline="24" begincolumn="38" endcolumn="55" rule="UnusedPrivateField" ruleset="Best Practices" package="com.pallasathenagroup.entitymanagers.financial" class="EmployeePaymentBatchEntityManager" variable="scopeEntityManager" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+            Avoid unused private fields such as 'scopeEntityManager'.
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\entitymanagers\financial\EmployeePaymentEntityManager.java">
+        <violation beginline="1" endline="898" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers.financial" class="EmployeePaymentEntityManager" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+            Too many static imports may lead to messy code
+        </violation>
+        <violation beginline="345" endline="345" begincolumn="22" endcolumn="42" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers.financial" class="EmployeePaymentEntityManager" method="sanityCheckPayments" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Collectors.groupingBy' due to existing static import 'java.util.stream.Collectors.groupingBy'
+        </violation>
+        <violation beginline="486" endline="486" begincolumn="26" endcolumn="69" rule="UselessParentheses" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers.financial" class="EmployeePaymentEntityManager" method="cancelOutNegativePayments" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+            Useless parentheses.
+        </violation>
+        <violation beginline="651" endline="651" begincolumn="26" endcolumn="98" rule="UselessParentheses" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers.financial" class="EmployeePaymentEntityManager" method="subtractExistingPayments" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+            Useless parentheses.
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\exceptions\ExhaustedDiscountCodeException.java">
+        <violation beginline="10" endline="10" begincolumn="32" endcolumn="43" rule="UnusedPrivateField" ruleset="Best Practices" package="com.pallasathenagroup.exceptions" class="ExhaustedDiscountCodeException" variable="discountCode" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+            Avoid unused private fields such as 'discountCode'.
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\exceptions\RefundUnpaidOrderException.java">
+        <violation beginline="10" endline="10" begincolumn="25" endcolumn="29" rule="UnusedPrivateField" ruleset="Best Practices" package="com.pallasathenagroup.exceptions" class="RefundUnpaidOrderException" variable="order" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+            Avoid unused private fields such as 'order'.
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\fixtures\ScopeFixture.java">
+        <violation beginline="18" endline="18" begincolumn="1" endcolumn="20" rule="UnusedImports" ruleset="Best Practices" package="com.pallasathenagroup.fixtures" class="ScopeFixture" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+            Avoid unused imports such as 'java.net.URI'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\reporting\KPITarget.java">
+        <violation beginline="119" endline="119" begincolumn="34" endcolumn="189" rule="UnusedPrivateMethod" ruleset="Best Practices" package="com.pallasathenagroup.reporting" class="KPITarget" method="getActiveMonthsOfPastYear" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedprivatemethod" priority="3">
+            Avoid unused private methods such as 'getActiveMonthsOfPastYear(YearMonth,TreeBasedTable)'.
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\serializers\ScopeRecursionFilter.java">
+        <violation beginline="87" endline="87" begincolumn="41" endcolumn="84" rule="UselessParentheses" ruleset="Code Style" package="com.pallasathenagroup.serializers" class="ScopeRecursionFilter" method="serializeAsField" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+            Useless parentheses.
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\types\XmlType.java">
+        <violation beginline="43" endline="43" begincolumn="18" endcolumn="21" rule="UnusedPrivateField" ruleset="Best Practices" package="com.pallasathenagroup.types" class="XmlType" variable="type" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+            Avoid unused private fields such as 'type'.
+        </violation>
+        <violation beginline="131" endline="131" begincolumn="39" endcolumn="61" rule="UselessParentheses" ruleset="Code Style" package="com.pallasathenagroup.types" class="XmlType$XmlJavaTypeDescriptor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+            Useless parentheses.
+        </violation>
+        <violation beginline="135" endline="135" begincolumn="39" endcolumn="61" rule="UselessParentheses" ruleset="Code Style" package="com.pallasathenagroup.types" class="XmlType$XmlJavaTypeDescriptor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+            Useless parentheses.
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\validators\ClassRoomPricingValidator.java">
+        <violation beginline="20" endline="21" begincolumn="14" endcolumn="73" rule="UselessParentheses" ruleset="Code Style" package="com.pallasathenagroup.validators" class="ClassRoomPricingValidator" method="isValid" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+            Useless parentheses.
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\main\java\com\pallasathenagroup\validators\ContractTermValidator.java">
+        <violation beginline="17" endline="17" begincolumn="47" endcolumn="126" rule="UselessParentheses" ruleset="Code Style" package="com.pallasathenagroup.validators" class="ContractTermValidator" method="isValid" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+            Useless parentheses.
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\test\java\com\pallasathenagroup\entities\AthenaStudiesCourseGroupTest.java">
+        <violation beginline="1" endline="376" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="com.pallasathenagroup.entities" class="AthenaStudiesCourseGroupTest" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+            Too many static imports may lead to messy code
+        </violation>
+        <violation beginline="239" endline="239" begincolumn="24" endcolumn="63" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entities" class="AthenaStudiesCourseGroupTest" method="testAdministrationCompleteRevertsWithoutLocation" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'CourseGroupState.ADMINISTRATION_COMPLETE' due to existing static import 'com.pallasathenagroup.entities.CourseGroupState.ADMINISTRATION_COMPLETE'
+        </violation>
+        <violation beginline="256" endline="256" begincolumn="24" endcolumn="64" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entities" class="AthenaStudiesCourseGroupTest" method="testAdministrationFinishedRevertsWithoutLocation" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'CourseGroupState.ADMINISTRATION_VALIDATED' due to existing static import 'com.pallasathenagroup.entities.CourseGroupState.ADMINISTRATION_VALIDATED'
+        </violation>
+        <violation beginline="346" endline="346" begincolumn="20" endcolumn="45" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entities" class="AthenaStudiesCourseGroupTest" method="testSortByCancelledLast" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'CourseGroupState.CANCELLED' due to existing static import 'com.pallasathenagroup.entities.CourseGroupState.CANCELLED'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\test\java\com\pallasathenagroup\entities\hermes\OrderTest.java">
+        <violation beginline="1" endline="340" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="com.pallasathenagroup.entities.hermes" class="OrderTest" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+            Too many static imports may lead to messy code
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\test\java\com\pallasathenagroup\entities\mailchimp\FetchTest.java">
+        <violation beginline="1" endline="479" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="com.pallasathenagroup.entities.mailchimp" class="FetchTest" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+            Too many static imports may lead to messy code
+        </violation>
+        <violation beginline="442" endline="442" begincolumn="36" endcolumn="56" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entities.mailchimp" class="FetchTest" method="testGetSingleOrder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Matchers.notNullValue' due to existing static import 'org.hamcrest.Matchers.notNullValue'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\test\java\com\pallasathenagroup\entitymanagers\AbstractEntityManagerTest.java">
+        <violation beginline="27" endline="27" begincolumn="1" endcolumn="28" rule="UnusedImports" ruleset="Best Practices" package="com.pallasathenagroup.entitymanagers" class="AbstractEntityManagerTest" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+            Avoid unused imports such as 'java.util.Collection'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\test\java\com\pallasathenagroup\entitymanagers\AthenaStudiesCourseGroupEntityManagerTest.java">
+        <violation beginline="1" endline="610" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+            Too many static imports may lead to messy code
+        </violation>
+        <violation beginline="224" endline="224" begincolumn="30" endcolumn="56" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testGetScopedAggregateCourseGroupStatistics" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Matchers.containsInAnyOrder' due to existing static import 'org.hamcrest.Matchers.containsInAnyOrder'
+        </violation>
+        <violation beginline="245" endline="245" begincolumn="34" endcolumn="50" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testGetAggregateCourseGroupStatisticsByContract" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Matchers.contains' due to existing static import 'org.hamcrest.Matchers.contains'
+        </violation>
+        <violation beginline="296" endline="296" begincolumn="43" endcolumn="59" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testGetCustomerRetention" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Matchers.contains' due to existing static import 'org.hamcrest.Matchers.contains'
+        </violation>
+        <violation beginline="337" endline="337" begincolumn="47" endcolumn="61" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testGetAthenaStudiesCoursesWithBDDetails" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'CoreMatchers.is' due to existing static import 'org.hamcrest.CoreMatchers.is'
+        </violation>
+        <violation beginline="339" endline="339" begincolumn="54" endcolumn="68" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testGetAthenaStudiesCoursesWithBDDetails" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'CoreMatchers.is' due to existing static import 'org.hamcrest.CoreMatchers.is'
+        </violation>
+        <violation beginline="340" endline="340" begincolumn="54" endcolumn="68" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testGetAthenaStudiesCoursesWithBDDetails" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'CoreMatchers.is' due to existing static import 'org.hamcrest.CoreMatchers.is'
+        </violation>
+        <violation beginline="341" endline="341" begincolumn="51" endcolumn="65" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testGetAthenaStudiesCoursesWithBDDetails" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'CoreMatchers.is' due to existing static import 'org.hamcrest.CoreMatchers.is'
+        </violation>
+        <violation beginline="343" endline="343" begincolumn="54" endcolumn="68" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testGetAthenaStudiesCoursesWithBDDetails" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'CoreMatchers.is' due to existing static import 'org.hamcrest.CoreMatchers.is'
+        </violation>
+        <violation beginline="344" endline="344" begincolumn="54" endcolumn="68" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testGetAthenaStudiesCoursesWithBDDetails" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'CoreMatchers.is' due to existing static import 'org.hamcrest.CoreMatchers.is'
+        </violation>
+        <violation beginline="345" endline="345" begincolumn="51" endcolumn="65" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testGetAthenaStudiesCoursesWithBDDetails" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'CoreMatchers.is' due to existing static import 'org.hamcrest.CoreMatchers.is'
+        </violation>
+        <violation beginline="423" endline="423" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testCreateAthenaStudiesCourseGroupState" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="428" endline="428" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testCreateAthenaStudiesCourseGroupInThePast" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="438" endline="438" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testCourseTimeSlotBasedTransitionsAddCTSInThePastWithUpdate" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="447" endline="447" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testCourseTimeSlotBasedTransitionsAddCTSInThePastWithoutUpdate" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="456" endline="456" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testCourseTimeSlotBasedTransitionsAddCTSInThePastUseQuery" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="463" endline="463" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testTimeBasedTransitionCreatedInProgressIsDetectedI" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="471" endline="471" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testTimeBasedTransitionCreatedInProgressIsDetectedII" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="472" endline="472" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testTimeBasedTransitionCreatedInProgressIsDetectedII" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="476" endline="476" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testTimeBasedTransitionCreatedInProgressIsDetectedII" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="483" endline="483" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testTimeBasedTransitionInProgressCreatedIsDetected" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="484" endline="484" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testTimeBasedTransitionInProgressCreatedIsDetected" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="488" endline="488" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testTimeBasedTransitionInProgressCreatedIsDetected" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="494" endline="494" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testTimeBasedTransitionReadyInProgressIsDetected" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="495" endline="495" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testTimeBasedTransitionReadyInProgressIsDetected" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="499" endline="499" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testTimeBasedTransitionReadyInProgressIsDetected" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="507" endline="507" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testTimeBasedTransitionInProgressReadyIsDetected" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="508" endline="508" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testTimeBasedTransitionInProgressReadyIsDetected" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="512" endline="512" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testTimeBasedTransitionInProgressReadyIsDetected" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="519" endline="519" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testTimeBasedTransitionInProgressFinishedIsDetected" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="520" endline="520" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testTimeBasedTransitionInProgressFinishedIsDetected" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="524" endline="524" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testTimeBasedTransitionInProgressFinishedIsDetected" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="533" endline="533" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testTimeBasedTransitionFinishedInProgressIsDetected" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="534" endline="534" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testTimeBasedTransitionFinishedInProgressIsDetected" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="538" endline="538" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testTimeBasedTransitionFinishedInProgressIsDetected" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="547" endline="547" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testNoTimeBasedTransitionFinishedCancelledBefore8th" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="548" endline="548" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testNoTimeBasedTransitionFinishedCancelledBefore8th" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="552" endline="552" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testNoTimeBasedTransitionFinishedCancelledBefore8th" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="561" endline="561" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testTimeBasedTransitionFinishedCancelledIsDetected" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="562" endline="562" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testTimeBasedTransitionFinishedCancelledIsDetected" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="566" endline="566" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testTimeBasedTransitionFinishedCancelledIsDetected" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="572" endline="572" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testSearchAthenaStudiesCourseGroupsNoSearchTerm" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="578" endline="578" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testSearchASCGAllGroups" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="584" endline="584" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="AthenaStudiesCourseGroupEntityManagerTest" method="testSearchASCGOneGroup" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\test\java\com\pallasathenagroup\entitymanagers\ClientEntityManagerTest.java">
+        <violation beginline="1" endline="248" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="ClientEntityManagerTest" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+            Too many static imports may lead to messy code
+        </violation>
+        <violation beginline="63" endline="63" begincolumn="33" endcolumn="51" rule="UnusedPrivateField" ruleset="Best Practices" package="com.pallasathenagroup.entitymanagers" class="ClientEntityManagerTest" variable="athenaStudiesCourse" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+            Avoid unused private fields such as 'athenaStudiesCourse'.
+        </violation>
+        <violation beginline="66" endline="66" begincolumn="28" endcolumn="42" rule="UnusedPrivateField" ruleset="Best Practices" package="com.pallasathenagroup.entitymanagers" class="ClientEntityManagerTest" variable="shoppingBasketA" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+            Avoid unused private fields such as 'shoppingBasketA'.
+        </violation>
+        <violation beginline="66" endline="66" begincolumn="45" endcolumn="59" rule="UnusedPrivateField" ruleset="Best Practices" package="com.pallasathenagroup.entitymanagers" class="ClientEntityManagerTest" variable="shoppingBasketB" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+            Avoid unused private fields such as 'shoppingBasketB'.
+        </violation>
+        <violation beginline="237" endline="237" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="ClientEntityManagerTest" method="testGetAllClientsWithGroupsWithFormsToBeSentEndingBetween" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="238" endline="238" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="ClientEntityManagerTest" method="testGetAllClientsWithGroupsWithFormsToBeSentEndingBetween" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="239" endline="239" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="ClientEntityManagerTest" method="testGetAllClientsWithGroupsWithFormsToBeSentEndingBetween" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="240" endline="240" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="ClientEntityManagerTest" method="testGetAllClientsWithGroupsWithFormsToBeSentEndingBetween" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\test\java\com\pallasathenagroup\entitymanagers\CourseEntityManagerTest.java">
+        <violation beginline="1" endline="307" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="CourseEntityManagerTest" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+            Too many static imports may lead to messy code
+        </violation>
+        <violation beginline="244" endline="244" begincolumn="74" endcolumn="93" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="CourseEntityManagerTest" method="testGetEmplForMailchimpList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Matchers.hasProperty' due to existing static import 'org.hamcrest.Matchers.hasProperty'
+        </violation>
+        <violation beginline="245" endline="245" begincolumn="74" endcolumn="93" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="CourseEntityManagerTest" method="testGetEmplForMailchimpList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Matchers.hasProperty' due to existing static import 'org.hamcrest.Matchers.hasProperty'
+        </violation>
+        <violation beginline="246" endline="246" begincolumn="74" endcolumn="93" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="CourseEntityManagerTest" method="testGetEmplForMailchimpList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Matchers.hasProperty' due to existing static import 'org.hamcrest.Matchers.hasProperty'
+        </violation>
+        <violation beginline="247" endline="247" begincolumn="74" endcolumn="93" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="CourseEntityManagerTest" method="testGetEmplForMailchimpList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Matchers.hasProperty' due to existing static import 'org.hamcrest.Matchers.hasProperty'
+        </violation>
+        <violation beginline="248" endline="248" begincolumn="74" endcolumn="93" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="CourseEntityManagerTest" method="testGetEmplForMailchimpList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Matchers.hasProperty' due to existing static import 'org.hamcrest.Matchers.hasProperty'
+        </violation>
+        <violation beginline="249" endline="249" begincolumn="74" endcolumn="93" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="CourseEntityManagerTest" method="testGetEmplForMailchimpList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Matchers.hasProperty' due to existing static import 'org.hamcrest.Matchers.hasProperty'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\test\java\com\pallasathenagroup\entitymanagers\EmployeeEntityManagerTest.java">
+        <violation beginline="1" endline="380" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="EmployeeEntityManagerTest" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+            Too many static imports may lead to messy code
+        </violation>
+        <violation beginline="169" endline="169" begincolumn="57" endcolumn="101" rule="UselessParentheses" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="EmployeeEntityManagerTest" method="setUpScopes" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+            Useless parentheses.
+        </violation>
+        <violation beginline="200" endline="200" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="EmployeeEntityManagerTest" method="testGetBusinessDevelopers" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="208" endline="208" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="EmployeeEntityManagerTest" method="testGetEmployeesWithCapabilityInScope" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="209" endline="209" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="EmployeeEntityManagerTest" method="testGetEmployeesWithCapabilityInScope" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="216" endline="216" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="EmployeeEntityManagerTest" method="testGetEmployeePayoutSummary" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="217" endline="217" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="EmployeeEntityManagerTest" method="testGetEmployeePayoutSummary" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="222" endline="222" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="EmployeeEntityManagerTest" method="testGetEmployeePayoutSummary" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="223" endline="223" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="EmployeeEntityManagerTest" method="testGetEmployeePayoutSummary" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="225" endline="225" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="EmployeeEntityManagerTest" method="testGetEmployeePayoutSummary" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="226" endline="226" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="EmployeeEntityManagerTest" method="testGetEmployeePayoutSummary" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="238" endline="238" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="EmployeeEntityManagerTest" method="testGetEmployeeCourseGroupLedgerSummary" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="239" endline="239" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="EmployeeEntityManagerTest" method="testGetEmployeeCourseGroupLedgerSummary" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="253" endline="253" begincolumn="9" endcolumn="25" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="EmployeeEntityManagerTest" method="testGetEmployees" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'Assert.assertThat' due to existing static import 'org.junit.Assert.assertThat'
+        </violation>
+        <violation beginline="324" endline="324" begincolumn="70" endcolumn="140" rule="UselessParentheses" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="EmployeeEntityManagerTest" method="testFunctionScopeNonUpdatable" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+            Useless parentheses.
+        </violation>
+        <violation beginline="332" endline="332" begincolumn="70" endcolumn="140" rule="UselessParentheses" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="EmployeeEntityManagerTest" method="testFunctionScopeNonDeletable" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+            Useless parentheses.
+        </violation>
+        <violation beginline="346" endline="346" begincolumn="70" endcolumn="147" rule="UselessParentheses" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers" class="EmployeeEntityManagerTest" method="testFunctionCapabilitiesNonDeletable" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+            Useless parentheses.
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\test\java\com\pallasathenagroup\entitymanagers\financial\EmployeePaymentEntityManagerTest.java">
+        <violation beginline="1" endline="2096" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers.financial" class="EmployeePaymentEntityManagerTest" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+            Too many static imports may lead to messy code
+        </violation>
+        <violation beginline="249" endline="249" begincolumn="35" endcolumn="52" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers.financial" class="EmployeePaymentEntityManagerTest" method="domain201ReproductionTest" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'PaymentStatus.PAID' due to existing static import 'com.pallasathenagroup.entities.financial.EmployeePayment.PaymentStatus.PAID'
+        </violation>
+        <violation beginline="373" endline="373" begincolumn="57" endcolumn="79" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers.financial" class="EmployeePaymentEntityManagerTest" method="testSubtractExistingPaymentsOverFully" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'PaymentStatus.RECKONING' due to existing static import 'com.pallasathenagroup.entities.financial.EmployeePayment.PaymentStatus.RECKONING'
+        </violation>
+        <violation beginline="1079" endline="1079" begincolumn="68" endcolumn="90" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.pallasathenagroup.entitymanagers.financial" class="EmployeePaymentEntityManagerTest" method="testInvalidReckoningPayment" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+            Unnecessary use of fully qualified name 'PaymentStatus.RECKONING' due to existing static import 'com.pallasathenagroup.entities.financial.EmployeePayment.PaymentStatus.RECKONING'
+        </violation>
+    </file>
+    <file name="C:\Users\Jan-Willem\git\athena-hibernate-test\domain\src\test\java\com\pallasathenagroup\entitymanagers\zoom\ZoomHostLicensesEntityManagerTest.java">
+        <violation beginline="17" endline="17" begincolumn="1" endcolumn="56" rule="UnusedImports" ruleset="Best Practices" package="com.pallasathenagroup.entitymanagers.zoom" class="ZoomHostLicensesEntityManagerTest" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+            Avoid unused imports such as 'com.pallasathenagroup.entities.hermes.OrderEntry'
+        </violation>
+    </file>
+</pmd>

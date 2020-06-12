@@ -1,5 +1,5 @@
-name: 'Push SpotBugs report'
-description: 'Push SpotBugs Code Analysis report'
+name: 'Push PMD report'
+description: 'Push PMD Code Analysis report'
 author: 'Jan-Willem Gmelig Meyling'
 inputs:
   path:
@@ -7,10 +7,10 @@ inputs:
     required: true
   name:
     description: 'Check run name under which the report is created'
-    default: spotbugs
+    default: PMD
   title:
     description: 'Check run title under which the report is created'
-    default: SpotBugs Source Code Analyzer report
+    default: PMD Source Code Analyzer report
   token:
     description: >
       Personal access token (PAT) used to fetch the repository. The PAT is configured
