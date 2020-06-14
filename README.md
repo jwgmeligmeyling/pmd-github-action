@@ -72,6 +72,13 @@ And do not forget to enable XML output for the Maven plugin:
 </build>
 ```
 
+## Other relevant actions
+This is a Github Action in a series of other GitHub Actions. Similar actions include:
+
+* [checkstyle-github-action](https://github.com/jwgmeligmeyling/checkstyle-github-action)
+* [pmd-github-action](https://github.com/jwgmeligmeyling/pmd-github-action)
+* [spotbugs-github-action](https://github.com/jwgmeligmeyling/spotbugs-github-action)
+
 ## Contributing
 
 Install the dependencies  

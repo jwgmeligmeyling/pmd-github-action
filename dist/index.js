@@ -8474,7 +8474,9 @@ function run() {
                 core.debug(`Root artifact directory is ${searchResult.rootDirectory}`);
                 const annotations = ramda_1.chain(annotations_1.annotationsForPath, searchResult.filesToUpload);
                 core.debug(`Grouping ${annotations.length} annotations into chunks of ${MAX_ANNOTATIONS_PER_REQUEST}`);
-                const groupedAnnotations = ramda_1.splitEvery(MAX_ANNOTATIONS_PER_REQUEST, annotations);
+                const groupedAnnotations = annotations.length > MAX_ANNOTATIONS_PER_REQUEST
+                    ? ramda_1.splitEvery(MAX_ANNOTATIONS_PER_REQUEST, annotations)
+                    : [annotations];
                 core.debug(`Created ${groupedAnnotations.length} buckets`);
                 for (const annotationSet of groupedAnnotations) {
                     yield createCheck(name, title, annotationSet, annotations.length);
