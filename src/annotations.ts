@@ -5,6 +5,7 @@ import fs from 'fs'
 import * as path from 'path'
 import {Annotation, AnnotationLevel} from './github'
 import {chain, map} from 'ramda'
+import decode from 'unescape'
 
 const XML_PARSE_OPTIONS = {
   allowBooleanAttributes: true,
@@ -45,7 +46,7 @@ export function annotationsForPath(resultFile: string): Annotation[] {
         start_line: Number(violation.beginline || 1),
         end_line: Number(violation.endline || violation.beginline || 1),
         title: `${violation.ruleset} ${violation.rule}`,
-        message: violation['#text']
+        message: decode(violation['#text'])
       }
 
       return annotation

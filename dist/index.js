@@ -381,48 +381,22 @@ eval("require")("encoding");
 /***/ }),
 /* 19 */,
 /* 20 */
-/***/ (function(module, __unusedexports, __webpack_require__) {
+/***/ (function(module) {
 
 "use strict";
+/*!
+ * is-extendable <https://github.com/jonschlinkert/is-extendable>
+ *
+ * Copyright (c) 2015, Jon Schlinkert.
+ * Licensed under the MIT License.
+ */
 
 
-const cp = __webpack_require__(129);
-const parse = __webpack_require__(568);
-const enoent = __webpack_require__(478);
 
-function spawn(command, args, options) {
-    // Parse the arguments
-    const parsed = parse(command, args, options);
-
-    // Spawn the child process
-    const spawned = cp.spawn(parsed.command, parsed.args, parsed.options);
-
-    // Hook into child process "exit" event to emit an error if the command
-    // does not exists, see: https://github.com/IndigoUnited/node-cross-spawn/issues/16
-    enoent.hookChildProcess(spawned, parsed);
-
-    return spawned;
-}
-
-function spawnSync(command, args, options) {
-    // Parse the arguments
-    const parsed = parse(command, args, options);
-
-    // Spawn the child process
-    const result = cp.spawnSync(parsed.command, parsed.args, parsed.options);
-
-    // Analyze if the command does not exist, see: https://github.com/IndigoUnited/node-cross-spawn/issues/16
-    result.error = result.error || enoent.verifyENOENTSync(result.status, parsed);
-
-    return result;
-}
-
-module.exports = spawn;
-module.exports.spawn = spawn;
-module.exports.sync = spawnSync;
-
-module.exports._parse = parse;
-module.exports._enoent = enoent;
+module.exports = function isExtendable(val) {
+  return typeof val !== 'undefined' && val !== null
+    && (typeof val === 'object' || typeof val === 'function');
+};
 
 
 /***/ }),
@@ -3767,51 +3741,43 @@ module.exports = without;
 "use strict";
 
 
-const path = __webpack_require__(622);
-const which = __webpack_require__(142);
-const pathKey = __webpack_require__(359)();
+const cp = __webpack_require__(129);
+const parse = __webpack_require__(568);
+const enoent = __webpack_require__(478);
 
-function resolveCommandAttempt(parsed, withoutPathExt) {
-    const cwd = process.cwd();
-    const hasCustomCwd = parsed.options.cwd != null;
+function spawn(command, args, options) {
+    // Parse the arguments
+    const parsed = parse(command, args, options);
 
-    // If a custom `cwd` was specified, we need to change the process cwd
-    // because `which` will do stat calls but does not support a custom cwd
-    if (hasCustomCwd) {
-        try {
-            process.chdir(parsed.options.cwd);
-        } catch (err) {
-            /* Empty */
-        }
-    }
+    // Spawn the child process
+    const spawned = cp.spawn(parsed.command, parsed.args, parsed.options);
 
-    let resolved;
+    // Hook into child process "exit" event to emit an error if the command
+    // does not exists, see: https://github.com/IndigoUnited/node-cross-spawn/issues/16
+    enoent.hookChildProcess(spawned, parsed);
 
-    try {
-        resolved = which.sync(parsed.command, {
-            path: (parsed.options.env || process.env)[pathKey],
-            pathExt: withoutPathExt ? path.delimiter : undefined,
-        });
-    } catch (e) {
-        /* Empty */
-    } finally {
-        process.chdir(cwd);
-    }
-
-    // If we successfully resolved, ensure that an absolute path is returned
-    // Note that when a custom `cwd` was used, we need to resolve to an absolute path based on it
-    if (resolved) {
-        resolved = path.resolve(hasCustomCwd ? parsed.options.cwd : '', resolved);
-    }
-
-    return resolved;
+    return spawned;
 }
 
-function resolveCommand(parsed) {
-    return resolveCommandAttempt(parsed) || resolveCommandAttempt(parsed, true);
+function spawnSync(command, args, options) {
+    // Parse the arguments
+    const parsed = parse(command, args, options);
+
+    // Spawn the child process
+    const result = cp.spawnSync(parsed.command, parsed.args, parsed.options);
+
+    // Analyze if the command does not exist, see: https://github.com/IndigoUnited/node-cross-spawn/issues/16
+    result.error = result.error || enoent.verifyENOENTSync(result.status, parsed);
+
+    return result;
 }
 
-module.exports = resolveCommand;
+module.exports = spawn;
+module.exports.spawn = spawn;
+module.exports.sync = spawnSync;
+
+module.exports._parse = parse;
+module.exports._enoent = enoent;
 
 
 /***/ }),
@@ -6876,6 +6842,7 @@ const fs_1 = __importDefault(__webpack_require__(747));
 const path = __importStar(__webpack_require__(622));
 const github_1 = __webpack_require__(824);
 const ramda_1 = __webpack_require__(61);
+const unescape_1 = __importDefault(__webpack_require__(444));
 const XML_PARSE_OPTIONS = {
     allowBooleanAttributes: true,
     ignoreAttributes: false,
@@ -6908,7 +6875,7 @@ function annotationsForPath(resultFile) {
                 start_line: Number(violation.beginline || 1),
                 end_line: Number(violation.endline || violation.beginline || 1),
                 title: `${violation.ruleset} ${violation.rule}`,
-                message: violation['#text']
+                message: unescape_1.default(violation['#text'])
             };
             return annotation;
         }, asArray(file.violation));
@@ -15137,7 +15104,60 @@ compose(uniq, _concat));
 module.exports = union;
 
 /***/ }),
-/* 411 */,
+/* 411 */
+/***/ (function(module, __unusedexports, __webpack_require__) {
+
+"use strict";
+
+
+const path = __webpack_require__(622);
+const which = __webpack_require__(142);
+const pathKey = __webpack_require__(359)();
+
+function resolveCommandAttempt(parsed, withoutPathExt) {
+    const cwd = process.cwd();
+    const hasCustomCwd = parsed.options.cwd != null;
+
+    // If a custom `cwd` was specified, we need to change the process cwd
+    // because `which` will do stat calls but does not support a custom cwd
+    if (hasCustomCwd) {
+        try {
+            process.chdir(parsed.options.cwd);
+        } catch (err) {
+            /* Empty */
+        }
+    }
+
+    let resolved;
+
+    try {
+        resolved = which.sync(parsed.command, {
+            path: (parsed.options.env || process.env)[pathKey],
+            pathExt: withoutPathExt ? path.delimiter : undefined,
+        });
+    } catch (e) {
+        /* Empty */
+    } finally {
+        process.chdir(cwd);
+    }
+
+    // If we successfully resolved, ensure that an absolute path is returned
+    // Note that when a custom `cwd` was used, we need to resolve to an absolute path based on it
+    if (resolved) {
+        resolved = path.resolve(hasCustomCwd ? parsed.options.cwd : '', resolved);
+    }
+
+    return resolved;
+}
+
+function resolveCommand(parsed) {
+    return resolveCommandAttempt(parsed) || resolveCommandAttempt(parsed, true);
+}
+
+module.exports = resolveCommand;
+
+
+/***/ }),
 /* 412 */,
 /* 413 */
 /***/ (function(module, __unusedexports, __webpack_require__) {
@@ -15848,7 +15868,116 @@ _curry2(function or(a, b) {
 module.exports = or;
 
 /***/ }),
-/* 444 */,
+/* 444 */
+/***/ (function(module, __unusedexports, __webpack_require__) {
+
+"use strict";
+
+
+var extend = __webpack_require__(707);
+var regexCache = {};
+var all;
+
+var charSets = {
+  default: {
+    '&quot;': '"',
+    '&#34;': '"',
+
+    '&apos;': '\'',
+    '&#39;': '\'',
+
+    '&amp;': '&',
+    '&#38;': '&',
+
+    '&gt;': '>',
+    '&#62;': '>',
+
+    '&lt;': '<',
+    '&#60;': '<'
+  },
+  extras: {
+    '&cent;': '¢',
+    '&#162;': '¢',
+
+    '&copy;': '©',
+    '&#169;': '©',
+
+    '&euro;': '€',
+    '&#8364;': '€',
+
+    '&pound;': '£',
+    '&#163;': '£',
+
+    '&reg;': '®',
+    '&#174;': '®',
+
+    '&yen;': '¥',
+    '&#165;': '¥'
+  }
+};
+
+// don't merge char sets unless "all" is explicitly called
+Object.defineProperty(charSets, 'all', {
+  get: function() {
+    return all || (all = extend({}, charSets.default, charSets.extras));
+  }
+});
+
+/**
+ * Convert HTML entities to HTML characters.
+ *
+ * @param  {String} `str` String with HTML entities to un-escape.
+ * @return {String}
+ */
+
+function unescape(str, type) {
+  if (!isString(str)) return '';
+  var chars = charSets[type || 'default'];
+  var regex = toRegex(type, chars);
+  return str.replace(regex, function(m) {
+    return chars[m];
+  });
+}
+
+function toRegex(type, chars) {
+  if (regexCache[type]) {
+    return regexCache[type];
+  }
+  var keys = Object.keys(chars).join('|');
+  var regex = new RegExp('(?=(' + keys + '))\\1', 'g');
+  regexCache[type] = regex;
+  return regex;
+}
+
+/**
+ * Returns true if str is a non-empty string
+ */
+
+function isString(str) {
+  return str && typeof str === 'string';
+}
+
+/**
+ * Expose charSets
+ */
+
+unescape.chars = charSets.default;
+unescape.extras = charSets.extras;
+// don't trip the "charSets" getter unless it's explicitly called
+Object.defineProperty(unescape, 'all', {
+  get: function() {
+    return charSets.all;
+  }
+});
+
+/**
+ * Expose `unescape`
+ */
+
+module.exports = unescape;
+
+
+/***/ }),
 /* 445 */,
 /* 446 */
 /***/ (function(module, __unusedexports, __webpack_require__) {
@@ -19129,7 +19258,7 @@ exports.getOctokitOptions = getOctokitOptions;
 
 const path = __webpack_require__(622);
 const niceTry = __webpack_require__(948);
-const resolveCommand = __webpack_require__(71);
+const resolveCommand = __webpack_require__(411);
 const escape = __webpack_require__(981);
 const readShebang = __webpack_require__(389);
 const semver = __webpack_require__(48);
@@ -21783,7 +21912,46 @@ module.exports = uniqBy;
 /* 704 */,
 /* 705 */,
 /* 706 */,
-/* 707 */,
+/* 707 */
+/***/ (function(module, __unusedexports, __webpack_require__) {
+
+"use strict";
+
+
+var isObject = __webpack_require__(20);
+
+module.exports = function extend(o/*, objects*/) {
+  if (!isObject(o)) { o = {}; }
+
+  var len = arguments.length;
+  for (var i = 1; i < len; i++) {
+    var obj = arguments[i];
+
+    if (isObject(obj)) {
+      assign(o, obj);
+    }
+  }
+  return o;
+};
+
+function assign(a, b) {
+  for (var key in b) {
+    if (hasOwn(b, key)) {
+      a[key] = b[key];
+    }
+  }
+}
+
+/**
+ * Returns true if the given `key` is an own property of `obj`.
+ */
+
+function hasOwn(obj, key) {
+  return Object.prototype.hasOwnProperty.call(obj, key);
+}
+
+
+/***/ }),
 /* 708 */,
 /* 709 */
 /***/ (function(module, __unusedexports, __webpack_require__) {
@@ -28853,7 +29021,7 @@ module.exports = _isPlaceholder;
 
 const path = __webpack_require__(622);
 const childProcess = __webpack_require__(129);
-const crossSpawn = __webpack_require__(20);
+const crossSpawn = __webpack_require__(71);
 const stripEof = __webpack_require__(639);
 const npmRunPath = __webpack_require__(512);
 const isStream = __webpack_require__(323);
