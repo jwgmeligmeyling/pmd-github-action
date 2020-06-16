@@ -597,6 +597,7 @@ var Inputs;
     Inputs["Title"] = "title";
     Inputs["Path"] = "path";
     Inputs["Token"] = "token";
+    Inputs["Ref"] = "ref";
 })(Inputs = exports.Inputs || (exports.Inputs = {}));
 
 
@@ -8458,11 +8459,31 @@ function run() {
 function createCheck(name, title, annotations, numErrors) {
     return __awaiter(this, void 0, void 0, function* () {
         const octokit = github_1.getOctokit(core.getInput(constants_1.Inputs.Token));
-        const req = Object.assign(Object.assign({}, github_1.context.repo), { ref: github_1.context.sha });
+        const head_sha = core.getInput('ref', { required: true });
+        const req = Object.assign(Object.assign({}, github_1.context.repo), { ref: head_sha });
+        const run_id = Number(process.env['GITHUB_RUN_ID']);
+        const workflowRun = yield octokit.actions.getWorkflowRun(Object.assign(Object.assign({}, github_1.context.repo), { run_id }));
+        console.log('Workflow run: %o', workflowRun.data);
+        // Gotta love Github's crippled API
+        const checkSuiteUrl = workflowRun.data.check_suite_url;
+        const checkSuiteId = Number(checkSuiteUrl.substring(checkSuiteUrl.lastIndexOf('/') + 1));
+        core.info(`Posting check result for ${head_sha}`);
+        const suitesRes = yield octokit.checks.listSuitesForRef(req);
+        // const suitesById = indexBy(
+        //   suite => String(suite.id),
+        //   suitesRes.data.check_suites
+        // )
         const res = yield octokit.checks.listForRef(req);
-        const existingCheckRun = res.data.check_runs.find(check => check.name === name);
+        const existingCheckRun = res.data.check_runs.find(check => check.name === name && check.check_suite.id === checkSuiteId);
+        if (existingCheckRun) {
+            console.log('Found existing check run %o', existingCheckRun);
+        }
+        else {
+            console.log(' The check suites are %o', suitesRes.data.check_suites);
+        }
         if (!existingCheckRun) {
-            const createRequest = Object.assign(Object.assign({}, github_1.context.repo), { head_sha: github_1.context.sha, name, status: 'completed', conclusion: numErrors === 0 ? 'success' : 'neutral', output: {
+            const createRequest = Object.assign(Object.assign({}, github_1.context.repo), { head_sha,
+                name, status: 'completed', conclusion: numErrors === 0 ? 'success' : 'neutral', output: {
                     title,
                     summary: `${numErrors} violation(s) found`,
                     annotations

@@ -20,6 +20,10 @@ inputs:
       Also when generating a new PAT, select the least scopes necessary.
       [Learn more about creating and using encrypted secrets](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets)
     default: ${{ github.token }}
+  ref:
+    description: >
+      The SHA to post the results to.
+    default: ${{ github.sha }}
 runs:
   using: 'node12'
   main: 'dist/index.js'
