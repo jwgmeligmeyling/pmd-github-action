@@ -8458,11 +8458,15 @@ function run() {
 function createCheck(name, title, annotations, numErrors) {
     return __awaiter(this, void 0, void 0, function* () {
         const octokit = github_1.getOctokit(core.getInput(constants_1.Inputs.Token));
-        const req = Object.assign(Object.assign({}, github_1.context.repo), { ref: github_1.context.sha });
+        let sha = github_1.context.sha;
+        if (github_1.context.payload.pull_request) {
+            sha = github_1.context.payload.pull_request.head.sha;
+        }
+        const req = Object.assign(Object.assign({}, github_1.context.repo), { ref: sha });
         const res = yield octokit.checks.listForRef(req);
         const existingCheckRun = res.data.check_runs.find(check => check.name === name);
         if (!existingCheckRun) {
-            const createRequest = Object.assign(Object.assign({}, github_1.context.repo), { head_sha: github_1.context.sha, name, status: 'completed', conclusion: numErrors === 0 ? 'success' : 'neutral', output: {
+            const createRequest = Object.assign(Object.assign({}, github_1.context.repo), { head_sha: sha, name, status: 'completed', conclusion: numErrors === 0 ? 'success' : 'neutral', output: {
                     title,
                     summary: `${numErrors} violation(s) found`,
                     annotations
