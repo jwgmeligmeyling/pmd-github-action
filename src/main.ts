@@ -45,7 +45,7 @@ async function run(): Promise<void> {
       }
     }
   } catch (error) {
-    core.setFailed(error)
+    core.setFailed(error instanceof Error ? error : String(error))
   }
 }
 
