@@ -31,7 +31,7 @@
     "@actions/glob": "^0.1.0",
     "@actions/io": "^1.0.2",
     "@octokit/rest": "latest",
-    "@types/html-to-text": "^5.1.1",
+    "@types/html-to-text": "^8.1.1",
     "fast-xml-parser": "^3.17.4",
     "html-to-text": "latest",
     "ramda": "^0.27.0",
