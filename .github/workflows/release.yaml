@@ -1,0 +1,23 @@
+name: 'Release'
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - '.github/**'
+      - 'README.md'
+      - 'LICENSE'
+      - 'catalog-info.yaml'
+jobs:
+  release-on-push:
+    name: 'Release new version'
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: 'Create release'
+        uses: rymndhng/release-on-push-action@v0.28.0
+        with:
+          use_github_release_notes: true
+          bump_version_scheme: patch
+          tag_prefix: v
