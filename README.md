@@ -1,4 +1,4 @@
-![build-test](https://github.com/jwgmeligmeyling/pmd-github-action/workflows/build-test/badge.svg)
+![build-test](https://github.com/adore-me/pmd-github-action/workflows/build-test/badge.svg)
 
 # PMD GitHub Action
 
