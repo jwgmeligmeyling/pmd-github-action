@@ -196,7 +196,7 @@ function createCheck(name, title, annotations, numErrors) {
         const res = yield octokit.checks.listForRef(req);
         const existingCheckRun = res.data.check_runs.find(check => check.name === name);
         if (!existingCheckRun) {
-            const createRequest = Object.assign(Object.assign({}, github_1.context.repo), { head_sha: sha, name, status: 'completed', conclusion: numErrors === 0 ? 'success' : 'neutral', output: {
+            const createRequest = Object.assign(Object.assign({}, github_1.context.repo), { head_sha: sha, name, status: 'completed', conclusion: numErrors === 0 ? 'success' : 'failure', output: {
                     title,
                     summary: `${numErrors} violation(s) found`,
                     annotations
@@ -205,7 +205,7 @@ function createCheck(name, title, annotations, numErrors) {
         }
         else {
             const check_run_id = existingCheckRun.id;
-            const update_req = Object.assign(Object.assign({}, github_1.context.repo), { check_run_id, status: 'completed', conclusion: numErrors === 0 ? 'success' : 'neutral', output: {
+            const update_req = Object.assign(Object.assign({}, github_1.context.repo), { check_run_id, status: 'completed', conclusion: numErrors === 0 ? 'success' : 'failure', output: {
                     title,
                     summary: `${numErrors} violation(s) found`,
                     annotations
