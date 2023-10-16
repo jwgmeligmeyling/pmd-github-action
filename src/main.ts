@@ -67,7 +67,7 @@ async function createCheck(
     ref: sha
   }
 
-  const res = await octokit.checks.listForRef(req)
+  const res = await octokit.rest.checks.listForRef(req)
   const existingCheckRun = res.data.check_runs.find(
     check => check.name === name
   )
@@ -77,8 +77,8 @@ async function createCheck(
       ...context.repo,
       head_sha: sha,
       name,
-      status: <const>'completed',
-      conclusion: numErrors === 0 ? <const>'success' : <const>'neutral',
+      status: 'completed' as const,
+      conclusion: numErrors === 0 ? ('success' as const) : ('neutral' as const),
       output: {
         title,
         summary: `${numErrors} violation(s) found`,
@@ -86,15 +86,15 @@ async function createCheck(
       }
     }
 
-    await octokit.checks.create(createRequest)
+    await octokit.rest.checks.create(createRequest)
   } else {
     const check_run_id = existingCheckRun.id
 
     const update_req = {
       ...context.repo,
       check_run_id,
-      status: <const>'completed',
-      conclusion: numErrors === 0 ? <const>'success' : <const>'neutral',
+      status: 'completed' as const,
+      conclusion: numErrors === 0 ? ('success' as const) : ('neutral' as const),
       output: {
         title,
         summary: `${numErrors} violation(s) found`,
@@ -102,7 +102,7 @@ async function createCheck(
       }
     }
 
-    await octokit.checks.update(update_req)
+    await octokit.rest.checks.update(update_req)
   }
 }
 
