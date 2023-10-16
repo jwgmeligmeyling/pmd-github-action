@@ -1,6 +1,6 @@
 import * as core from '@actions/core'
 import {File, PMDReport} from './pmd'
-import parser from 'fast-xml-parser'
+import {XMLParser} from 'fast-xml-parser'
 import fs from 'fs'
 import BufferEncoding from 'buffer'
 import * as path from 'path'
@@ -34,23 +34,26 @@ export function annotationsForPath(resultFile: string): Annotation[] {
   core.info(`Creating annotations for ${resultFile}`)
   const root: string = process.env['GITHUB_WORKSPACE'] || ''
 
+  const parser = new XMLParser(XML_PARSE_OPTIONS)
   const result: PMDReport = parser.parse(
-    fs.readFileSync(resultFile, 'UTF-8' as BufferEncoding),
-    XML_PARSE_OPTIONS
+    fs.readFileSync(resultFile, 'UTF-8' as BufferEncoding)
   )
 
-  return chain(file => {
-    return map(violation => {
-      const annotation: Annotation = {
-        annotation_level: getWarningLevel(violation.priority),
-        path: path.relative(root, file.name),
-        start_line: Number(violation.beginline || 1),
-        end_line: Number(violation.endline || violation.beginline || 1),
-        title: `${violation.ruleset} ${violation.rule}`,
-        message: decode(violation['#text'])
-      }
+  return chain(
+    file => {
+      return map(violation => {
+        const annotation: Annotation = {
+          annotation_level: getWarningLevel(violation.priority),
+          path: path.relative(root, file.name),
+          start_line: Number(violation.beginline || 1),
+          end_line: Number(violation.endline || violation.beginline || 1),
+          title: `${violation.ruleset} ${violation.rule}`,
+          message: decode(violation['#text'])
+        }
 
-      return annotation
-    }, asArray(file.violation))
-  }, asArray<File>(result.pmd?.file))
+        return annotation
+      }, asArray(file.violation))
+    },
+    asArray<File>(result.pmd?.file)
+  )
 }
